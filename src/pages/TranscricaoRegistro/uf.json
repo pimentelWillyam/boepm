@@ -1,0 +1,44 @@
+[
+  {
+    "ID_UF": "1",
+    "SIGLA_UF": "PE",
+    "NM_UF": "PERNAMBUCO",
+    "ID_PAIS": "34"
+  },
+  {
+    "ID_UF": "3",
+    "SIGLA_UF": "AL",
+    "NM_UF": "ALAGOAS",
+    "ID_PAIS": "34"
+  },
+  {
+    "ID_UF": "6",
+    "SIGLA_UF": "BA",
+    "NM_UF": "BAHIA",
+    "ID_PAIS": "34"
+  },
+  {
+    "ID_UF": "7",
+    "SIGLA_UF": "CE",
+    "NM_UF": "CEARA",
+    "ID_PAIS": "34"
+  },
+  {
+    "ID_UF": "16",
+    "SIGLA_UF": "PB",
+    "NM_UF": "PARAIBA",
+    "ID_PAIS": "34"
+  },
+  {
+    "ID_UF": "17",
+    "SIGLA_UF": "PI",
+    "NM_UF": "PIAUI",
+    "ID_PAIS": "34"
+  },
+  {
+    "ID_UF": "28",
+    "SIGLA_UF": "-NI-",
+    "NM_UF": "NÃO INFORMADO",
+    "ID_PAIS": "34"
+  }
+]

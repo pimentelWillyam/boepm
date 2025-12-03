@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BOEPM</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">aKOt1pIv0QQ0t-AzQ2jLuQlXWzBxDHWlsF8U5</string>
+</resources>

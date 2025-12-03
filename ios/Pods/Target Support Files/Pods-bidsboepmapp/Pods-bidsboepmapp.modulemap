@@ -1,0 +1,6 @@
+module Pods_bidsboepmapp {
+  umbrella header "Pods-bidsboepmapp-umbrella.h"
+
+  export *
+  module * { export * }
+}
