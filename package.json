@@ -8,7 +8,9 @@
     "start": "react-native start",
     "test": "jest --passWithNoTests",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "release": "npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle && cd android && ./gradlew assembleRelease"
+    "build:android:debug": "cd android && gradlew.bat assembleDebug",
+    "build:android:release": "cd android && gradlew.bat assembleRelease",
+    "release": "cd android && gradlew.bat assembleRelease"
   },
   "dependencies": {
     "@hookform/resolvers": "^1.3.4",
