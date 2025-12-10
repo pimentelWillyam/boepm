@@ -24,6 +24,7 @@ import {
   Linking,
 } from 'react-native'
 
+
 // import { NetworkInfo } from 'react-native-network-info'
 import { useNavigation } from '@react-navigation/native'
 import AsyncStorage from '@react-native-community/async-storage'
@@ -31,6 +32,7 @@ import { useForm } from 'react-hook-form'
 import axios, { AxiosResponse, CancelTokenSource } from 'axios'
 import moment from 'moment'
 import Icon from 'react-native-vector-icons/Feather'
+import IconFA5 from 'react-native-vector-icons/FontAwesome5'
 import OneSignal from 'react-native-onesignal'
 import { Modalize } from 'react-native-modalize'
 import Share from 'react-native-share'
@@ -46,7 +48,6 @@ import packagejson from '../../../package.json'
 
 import logosds from '../../assets/logos/logosds.png'
 import emptyImg from '../../assets/images/empty.png'
-import whatsapp from '../../assets/icon/whatsapp.png'
 
 import AuthContext from '../../contexts/auth'
 import CardBO from '../../components/CardBO'
@@ -1629,8 +1630,10 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
         <View>
           <ModalItem onPress={() => shareWithWhatsapp()}>
             <ModalItemContainer>
-              <Image
-                source={whatsapp}
+              <IconFA5
+                name="whatsapp"
+                size={30}
+                color="#25D366"
                 style={{
                   width: 30,
                   height: 30,
