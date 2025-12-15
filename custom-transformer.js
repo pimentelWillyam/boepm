@@ -1,31 +1,7 @@
-const metroTransformer = require('metro-react-native-babel-transformer');
-const reanimatedPlugin = require('react-native-reanimated/plugin');
+const upstreamTransformer = require('metro-react-native-babel-transformer');
 
-module.exports = {
-  transform: ({ src, filename, options }) => {
-    // Primeiro aplica o transformer do Metro
-    let result = metroTransformer.transform({
-      src,
-      filename,
-      options
-    });
-
-    // Depois aplica o plugin do Reanimated (versão 2.9.1)
-    if (reanimatedPlugin) {
-      const babelParser = require('@babel/parser');
-      const babelTraverse = require('@babel/traverse').default;
-      const babelGenerate = require('@babel/generator').default;
-
-      const ast = babelParser.parse(result.ast, {
-        sourceType: 'module',
-        plugins: ['jsx']
-      });
-
-      reanimatedPlugin(ast);
-
-      result.code = babelGenerate(ast).code;
-    }
-
-    return result;
-  }
+module.exports.transform = function({ src, filename, options }) {
+  // O plugin do Reanimated já está configurado no babel.config.js
+  // Então apenas usamos o transformer padrão do Metro
+  return upstreamTransformer.transform({ src, filename, options });
 };

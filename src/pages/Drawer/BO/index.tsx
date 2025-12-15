@@ -25,10 +25,10 @@ const BO: React.FC = () => {
       <DrawerBO.Navigator
         initialRouteName="TranscricaoRegistro"
         backBehavior="order"
-        drawerContentOptions={{
-          activeTintColor: '#666',
-          activeBackgroundColor: '#f2f2f2',
-          inactiveTintColor: 'grey',
+        screenOptions={{
+          drawerActiveTintColor: '#666',
+          drawerActiveBackgroundColor: '#f2f2f2',
+          drawerInactiveTintColor: 'grey',
         }}
       >
         <DrawerBO.Screen
