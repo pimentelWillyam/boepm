@@ -46,7 +46,7 @@ import packagejson from '../../../package.json'
 
 import logosds from '../../assets/logos/logosds.png'
 import emptyImg from '../../assets/images/empty.png'
-import whatsapp from '../../assets/icon/whatsapp.png'
+// import whatsapp from '../../assets/icon/whatsapp.png'
 
 import AuthContext from '../../contexts/auth'
 import CardBO from '../../components/CardBO'
@@ -1630,7 +1630,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
           <ModalItem onPress={() => shareWithWhatsapp()}>
             <ModalItemContainer>
               <Image
-                source={whatsapp}
+                // source={whatsapp}
                 style={{
                   width: 30,
                   height: 30,
