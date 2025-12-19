@@ -14,6 +14,9 @@ import com.swmansion.reanimated.ReanimatedPackage;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import com.geektime.rnonesignalandroid.ReactNativeOneSignalPackage;
+import com.stallion.Stallion;
+
+
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -49,6 +52,11 @@ public class MainApplication extends Application implements ReactApplication {
         @Override
         protected JSIModulePackage getJSIModulePackage() {
           return new ReanimatedJSIModulePackage(); // <- Adicione isso
+        }
+
+        @Override
+        protected String getJSBundleFile() {
+          return Stallion.getJSBundleFile(getApplicationContext());
         }
       };
 

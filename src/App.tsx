@@ -14,7 +14,9 @@ import Config from './config'
 
 import { AuthProvider } from './contexts/auth'
 
-export default function App() {
+import {withStallion} from 'react-native-stallion'
+
+function App() {
   useEffect(() => {
     OneSignal.setAppId(Config.urlEnvironments[Config.ENVIRONMENT].oneSignalKey)
     ImageEditor.toString()
@@ -35,6 +37,8 @@ export default function App() {
     </NavigationContainer>
   )
 }
+
+export default withStallion(App)
 
 // import React from 'react'
 // import {View, Text} from 'react-native';

@@ -9576,6 +9576,11 @@ react-native-size-matters@^0.3.1:
   resolved "https://registry.yarnpkg.com/react-native-size-matters/-/react-native-size-matters-0.3.1.tgz#24d0cfc335a2c730f6d58bd7b43ea5a41be4b49f"
   integrity sha512-mKOfBLIBFBcs9br1rlZDvxD5+mAl8Gfr5CounwJtxI6Z82rGrMO+Kgl9EIg3RMVf3G855a85YVqHJL2f5EDRlw==
 
+react-native-stallion@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-stallion/-/react-native-stallion-2.3.0.tgz#7b15021bed51b34d4b03a8ac7426d95b931ba321"
+  integrity sha512-VQ3PxV+23faUsUXlxyLZKahyGxYdEsmEGvN3nJDJXBIGlQccBX0FDghvADLzwtk1VlDoFAy6qe55tL9PZKdpig==
+
 react-native-use-persisted-reducer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-native-use-persisted-reducer/-/react-native-use-persisted-reducer-1.0.0.tgz#ac354c9354533d1672a60220d01150cc759b9015"

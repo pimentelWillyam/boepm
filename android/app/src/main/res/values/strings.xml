@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">BOEPM</string>
     <string moduleConfig="true" name="CodePushDeploymentKey">aKOt1pIv0QQ0t-AzQ2jLuQlXWzBxDHWlsF8U5</string>
+  <string name="StallionProjectId">66ed03380eb95c9c316256d3</string>
+  <string name="StallionAppToken">spb_wXC8wgWngcp6aBBGwIlINcaP5cJQTY832IR8cKPvi9</string>
+
 </resources>
