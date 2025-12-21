@@ -46,6 +46,7 @@ export function ModalAtualizacao() {
     }
   }
 
+  // ======================== Fechar modal ========================
   const handleFechar = () => {
     if (!currentlyRunningBundle || currentlyRunningBundle.version === newReleaseBundle?.version) {
       setVisivel(false)
@@ -57,6 +58,7 @@ export function ModalAtualizacao() {
     }
   }
 
+  // ======================== Render ========================
   if (!newReleaseBundle) return null // não renderiza se não houver update
 
   const { releaseNote } = newReleaseBundle

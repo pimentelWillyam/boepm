@@ -327,6 +327,9 @@ const Login = () => {
 
   return (
     <>
+      <>
+        <ModalAtualizacao />
+      </>
       {/* <Loading animating={loadingReq} text="Carregando..." /> */}
       <Container>
         <Header>
