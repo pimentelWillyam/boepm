@@ -14,6 +14,7 @@ import {
   Modal,
   PermissionsAndroid,
   StyleSheet,
+  Text,
 } from 'react-native'
 // import { WebView } from 'react-native-webview'
 // import DeviceInfo from 'react-native-device-info'
@@ -64,6 +65,7 @@ import {
 import requestPermission from '../../utils/request-permission'
 import useStoreGlobal from '../../store/global'
 import useStoreUsuario from '../../core/data/repositories/usuario'
+import { ModalAtualizacao } from '../../components/Modais/ModalAtualizacao'
 
 const Login = () => {
   const sign = useRef<SignatureViewRef>(null)
