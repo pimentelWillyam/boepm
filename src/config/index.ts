@@ -9,7 +9,7 @@ export default class Config {
 
   public static PROD = 3
 
-  public static ENVIRONMENT = Config.PROD
+  public static ENVIRONMENT = Config.HML
 
   public static urlEnvironments = [
     {
