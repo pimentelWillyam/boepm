@@ -44,7 +44,6 @@ import {
   responsiveWidth,
 } from 'react-native-responsive-dimensions'
 import { TouchableOpacity } from 'react-native-gesture-handler'
-import packagejson from '../../../package.json'
 
 import logosds from '../../assets/logos/logosds.png'
 import emptyImg from '../../assets/images/empty.png'
@@ -1211,7 +1210,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
           Alert.alert('Erro', 'Verifique a sua internet e sua VPN!')
         }
       }
-      // ############################################################################
 
       boToShare.RESPONSAVEIS.forEach((resp) => {
         responsaveis += `\n\t${resp?.NOME_COMPLETO} - ${resp?.CARGO} ${
@@ -1476,7 +1474,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
   }
 
   const showVersion = () => {
-    Alert.alert('Sobre o BOEPM', `Versão: ${packagejson.version}\n\n`)
+    Alert.alert('Sobre o BOEPM', `Versão: ${Config.APP_VERSION}\n\n`)
   }
 
   return (
