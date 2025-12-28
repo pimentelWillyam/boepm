@@ -1,6 +1,10 @@
-import dados from '../../package.json'
 
 export default class Config {
+
+  public static APP_VERSION = '1.9.79'
+  
+  public static UPDATE_MESSAGE = 'Uma nova versão do aplicativo está disponível. Por favor, atualize para a versão mais recente para continuar usando o aplicativo sem interrupções.'
+
   public static DEV = 0
 
   public static STAGE = 1
@@ -51,12 +55,6 @@ export default class Config {
       urlInfopol: 'http://10.238.205.138:8080/api',
     },
   ]
-
-  public static version = dados.version
-
-  public static revision = ''
-
-  public static message = '* Mensagem de Update!'
 }
 
 // 0e8edc7a-76ff-47be-bd74-e92685c29064    OneSignal-hml stage e dev
