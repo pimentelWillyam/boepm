@@ -1,5 +1,4 @@
 import axios from 'axios'
-import packagejson from '../../package.json'
 import Config from '../config'
 
 const api = axios.create({
@@ -7,7 +6,7 @@ const api = axios.create({
   timeout: 8000,
   validateStatus: () => true,
   headers: {
-    version: packagejson.version,
+    version: Config.APP_VERSION,
   },
 })
 
