@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import {
   Modal,
   View,
@@ -9,59 +9,65 @@ import {
   Alert,
 } from 'react-native'
 
-import { useStallionUpdate, sync, restart} from 'react-native-stallion'
+import { useStallionUpdate, sync, restart } from 'react-native-stallion'
 
 export function ModalAtualizacao() {
-  const { isRestartRequired, currentlyRunningBundle, newReleaseBundle } =
+  const { newReleaseBundle, currentlyRunningBundle, isRestartRequired } =
     useStallionUpdate()
 
   const [visivel, setVisivel] = useState(false)
   const [carregando, setCarregando] = useState(false)
 
-
+  const jaPerguntou = useRef(false)
+  const jaSincronizou = useRef(false)
 
   useEffect(() => {
-    if (newReleaseBundle) {
-      setVisivel(true)
+    if (
+      newReleaseBundle &&
+      currentlyRunningBundle &&
+      !jaPerguntou.current
+    ) {
+      const novaData = new Date(newReleaseBundle.createdAt).getTime()
+      const atualData = new Date(currentlyRunningBundle.createdAt).getTime()
 
+      if (novaData > atualData) {
+        jaPerguntou.current = true
+        setVisivel(true)
+      }
     }
-  }, [newReleaseBundle])
+  }, [newReleaseBundle, currentlyRunningBundle])
 
   const handleAtualizar = async () => {
-    if (!newReleaseBundle) return
+    if (carregando || jaSincronizou.current) return
+
+    jaSincronizou.current = true
     setCarregando(true)
+
     try {
-      sync()
+      await sync()
       Alert.alert('Atualizado', 'O aplicativo foi atualizado com sucesso!')
-      if (isRestartRequired) {
-        
-        Alert.alert('Reiniciando o aplicativo para aplicar as atualizações.')
-        restart()
-      }
-      setCarregando(false)
-      setVisivel(false)
-    } catch (err) {
-      setCarregando(false)
+    } catch {
       Alert.alert('Erro', 'Falha ao atualizar o aplicativo.')
+      jaSincronizou.current = false
+      setCarregando(false)
+      return
     }
+
+    setCarregando(false)
+    setVisivel(false)
   }
 
-  // ======================== Fechar modal ========================
-  const handleFechar = () => {
-    if (!currentlyRunningBundle || currentlyRunningBundle.version === newReleaseBundle?.version) {
-      setVisivel(false)
-    } else {
-      Alert.alert(
-        'Atualização obrigatória',
-        'Você precisa atualizar para continuar usando o app.',
-      )
+  useEffect(() => {
+    if (isRestartRequired) {
+      setTimeout(() => restart(), 300)
     }
+  }, [isRestartRequired])
+
+  const handleDepois = () => {
+    setVisivel(false)
   }
 
-  // ======================== Render ========================
-  if (!newReleaseBundle) return null // não renderiza se não houver update
-
-  const { releaseNote } = newReleaseBundle
+  if (!newReleaseBundle || !currentlyRunningBundle) return null
 
   return (
     <Modal
@@ -70,29 +76,31 @@ export function ModalAtualizacao() {
       animationType="fade"
       statusBarTranslucent
     >
-      <View style={estilos.sobreposicao}>
-        <View style={estilos.container}>
-          <Text style={estilos.titulo}>Nova versão disponível!</Text>
-          <Text style={estilos.descricao}>
-            {releaseNote || 'Uma nova versão do aplicativo está disponível.'}
+      <View style={styles.sobreposicao}>
+        <View style={styles.container}>
+          <Text style={styles.titulo}>Nova versão disponível</Text>
+
+          <Text style={styles.descricao}>
+            {newReleaseBundle.releaseNote ||
+              'Uma atualização está disponível. Deseja atualizar agora?'}
           </Text>
 
           {carregando ? (
             <ActivityIndicator size="large" />
           ) : (
-            <View style={estilos.acoes}>
+            <View style={styles.acoes}>
               <TouchableOpacity
-                style={[estilos.botao, estilos.primario]}
+                style={[styles.botao, styles.primario]}
                 onPress={handleAtualizar}
               >
-                <Text style={estilos.textoPrimario}>Atualizar agora</Text>
+                <Text style={styles.textoPrimario}>Atualizar agora</Text>
               </TouchableOpacity>
 
               <TouchableOpacity
-                style={[estilos.botao, estilos.secundario]}
-                onPress={handleFechar}
+                style={[styles.botao, styles.secundario]}
+                onPress={handleDepois}
               >
-                <Text style={estilos.textoSecundario}>Depois</Text>
+                <Text style={styles.textoSecundario}>Depois</Text>
               </TouchableOpacity>
             </View>
           )}
@@ -102,7 +110,7 @@ export function ModalAtualizacao() {
   )
 }
 
-const estilos = StyleSheet.create({
+const styles = StyleSheet.create({
   sobreposicao: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.6)',
