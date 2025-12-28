@@ -36,7 +36,6 @@ import pontoReferenciaJson from '../../utils/data/pontoReferencia.json'
 import unidadesJson from '../../utils/data/unidades.json'
 import ufJson from './uf.json'
 import municipiosJson from './municipios.json'
-import packagejson from '../../../package.json'
 import ImgTranscFato from '../../assets/images/transcricao-fato.png'
 import api from '../../services/api'
 
