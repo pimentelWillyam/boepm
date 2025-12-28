@@ -1,6 +1,5 @@
 {
   "name": "bids-boepm-app",
-  "version": "1.9.78",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
