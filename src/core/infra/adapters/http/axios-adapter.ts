@@ -5,7 +5,7 @@ import {
   HttpResponse,
   HttpClient,
 } from '../../../data/protocols/http-client'
-import { version } from '../../../../../package.json'
+import Config from '../../../../config'
 
 export class AxiosHttpClient<T = any> implements HttpClient {
   request = async (data: HttpRequest): Promise<HttpResponse> => {
@@ -16,7 +16,7 @@ export class AxiosHttpClient<T = any> implements HttpClient {
         data: data.body,
         headers: {
           ...data.headers,
-          version,
+          version: Config.APP_VERSION,
           'Content-Type': 'application/json',
         },
       })
