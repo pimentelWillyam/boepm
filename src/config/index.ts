@@ -1,7 +1,7 @@
 
 export default class Config {
 
-  public static APP_VERSION = '1.9.79'
+  public static APP_VERSION = '1.9.80'
   
   public static UPDATE_MESSAGE = 'Uma nova versão do aplicativo está disponível. Por favor, atualize para a versão mais recente para continuar usando o aplicativo sem interrupções.'
 
