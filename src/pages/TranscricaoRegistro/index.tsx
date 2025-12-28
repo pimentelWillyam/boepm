@@ -368,7 +368,7 @@ const TranscricaoRegistro: React.FC = (props: any) => {
     } else {
       newData = { ...data }
       newData.ID_BO = uuid.v4().toString()
-      newData.VERSION = packagejson.version || ''
+      newData.VERSION = Config.APP_VERSION || ''
       newData.ID_BO_COMPLEMENTAR = ''
       newData.COMPLEMENTADO = 0
       newData.DS_VIATURA = data.DS_VIATURA.toUpperCase()
