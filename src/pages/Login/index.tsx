@@ -39,7 +39,6 @@ import { InputLoginData } from '../../services/auth'
 
 import logo from '../../assets/logos/pm.png'
 import InputLogin from '../../components/InputLogin'
-import packagejson from '../../../package.json'
 
 import AuthContext from '../../contexts/auth'
 import Config from '../../config'
@@ -407,7 +406,7 @@ const Login = () => {
             onPress={() => console.log("searchUpdates")}
           >
             <TextVersao>
-            {`${packagejson.version}${Config.ENVIRONMENT < 2 ? 'b' : ''}`}
+            {`${Config.APP_VERSION}`}
               {/* {isAtualizado ? (
                 `${packagejson.version}${Config.ENVIRONMENT < 2 ? 'b' : ''}`
               ) : (
