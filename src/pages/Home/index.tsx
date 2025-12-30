@@ -1335,6 +1335,9 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
         message: mensagem,
         social: Share.Social.WHATSAPP,
       }
+      console.log("--- CONTEÚDO DA MENSAGEM ---")
+      console.log(shareOptions.message)
+      console.log("--- FIM DO CONTEÚDO DA MENSAGEM ---")
       Share.shareSingle(shareOptions)
         .then((res) => {})
         .catch((err) => {})
