@@ -1304,30 +1304,13 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
       mensagem = `
       *SDS - PMPE - ${boToShare.NM_UNID_OPERACIONAL}*
       Mike: *M-${boToShare.CD_OCORRENCIA}/${boToShare.DH_FATO.substring(6, 10)}*
-      Verificador: *${
-        boToShare.BO_STATUS[boToShare.BO_STATUS.length - 1]?.CRC ||
-        crc ||
-        'S/ Verificador'
-      }*
       Descrição da Natureza: *${boToShare.NATUREZAS[0].NATUREZA} / ${
         boToShare.CRIME_CONSUMADO === '0' ? 'TENTADO' : 'CONSUMADO'
       }*
-      Horario do fato: *${boToShare.DH_FATO}*
-      Endereço: *${
-        boToShare.ENDERECO.LOGRADOURO || 'Logradouro Desconhecido'
-      }, ${boToShare.ENDERECO.BAIRRO || 'Bairro não especificado'}, ${
-        boToShare.ENDERECO.MUNICIPIO || 'Municipio não especificado'
-      }*
-      *Prefixo VT:* ${boToShare.DS_VIATURA}
-      *Desfecho:* ${boToShare.NM_TIPO_DESFECHO || ''}
       ${boToShare.DADOS_COMPLEMENTARES || 'Não Informado'}
-      **Efetivo empenhado**
-      ${responsaveis}
-      **Envolvidos**
-      ${envolvidos || 'Sem envolvidos na ocorrência'}
       **Objetos apreendidos**
       ${objetos || 'Sem objetos na ocorrência'}
-      *PMPE. NOSSA PRESENÇA, SUA SEGURANÇA*`
+      *Desfecho:* ${boToShare.NM_TIPO_DESFECHO || ''}`
 
       // ############################################################################
       const shareOptions = {
