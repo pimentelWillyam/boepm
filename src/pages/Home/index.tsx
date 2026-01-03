@@ -91,6 +91,7 @@ import storage from '../../utils/storage'
 import useStore from '../../store/bo'
 import useStoreUsuario from '../../store/usuario'
 import useStoreGlobal from '../../store/global'
+import { BuscaMunicipioPorNome } from '../../helpers/BuscaMunicipioPorNome'
 
 axios.defaults.validateStatus = () => true
 
