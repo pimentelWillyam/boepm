@@ -1,59 +1,46 @@
-import fs from 'fs'
-import path from 'path'
-import { fileURLToPath } from 'url'
+import fs from "fs";
 
-// Compatível com ESM ("type": "module")
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-
-// Ler arquivos
-const municipiosAPartirDoExcel = JSON.parse(
-  fs.readFileSync(
-    path.join(__dirname, 'municipiosAPartirDoExcel.json'),
-    'utf-8'
-  )
-)
-
+// Ler os arquivos JSON
 const municipiosCompletos = JSON.parse(
-  fs.readFileSync(
-    path.join(__dirname, 'municipiosCompletos.json'),
-    'utf-8'
-  )
-)
+  fs.readFileSync("./municipiosCompletos.json", "utf-8")
+);
 
-// Criar mapa para busca rápida
-const mapaExcel = new Map(
-  municipiosAPartirDoExcel.map((m: any) => [
-    m.municipio.trim().toUpperCase(),
+const municipiosExcel = JSON.parse(
+  fs.readFileSync("./municipiosVindoDoExcel.json", "utf-8")
+);
+
+// Criar mapa do Excel para busca rápida
+const mapaExcel = new Map();
+
+municipiosExcel.forEach(m => {
+  mapaExcel.set(
+    m.municipio?.toUpperCase().trim(),
     m
-  ])
-)
+  );
+});
 
-// Gerar lista final
-const municipiosCompletosFinal = municipiosCompletos.map((m: any) => {
-  const chave = m.MUNICIPIO.trim().toUpperCase()
-  const encontrado = mapaExcel.get(chave)
-
-  if (!encontrado) return m
-
-  console.log('municipios iguais')
-  console.log('Municipio:', chave)
-  console.log('Área (AIS):', encontrado.area)
-  console.log('Diretoria:', encontrado.diretoria)
-  console.log('-----------------------------')
+// Fazer a união
+const municipiosCompletosFinal = municipiosCompletos.map(m => {
+  const chaveMunicipio = m.MUNICIPIO?.toUpperCase().trim();
+  const dadosExcel = mapaExcel.get(chaveMunicipio);
 
   return {
-    ...m,
-    DIRETORIA: encontrado.diretoria,
-    AIS: encontrado.area
-  }
-})
+    ID_MUNICIPIO: m.ID_MUNICIPIO,
+    MUNICIPIO: m.MUNICIPIO,
+    ID_UF: m.ID_UF,
 
-// Salvar novo arquivo
+    // 👉 SOMENTE SE EXISTIR NO EXCEL
+    DIRETORIA: dadosExcel?.diretoria ?? null,
+    AIS: dadosExcel?.area ?? null,
+    OME: dadosExcel?.ome ?? null
+  };
+});
+
+// Salvar o arquivo final
 fs.writeFileSync(
-  path.join(__dirname, 'municipiosCompletosFinal.json'),
+  "./municipiosCompletosFinal.json",
   JSON.stringify(municipiosCompletosFinal, null, 2),
-  'utf-8'
-)
+  "utf-8"
+);
 
-console.log('✅ Arquivo municipiosCompletosFinal.json criado com sucesso')
+console.log("✅ Arquivo municipiosCompletosFinal.json criado com sucesso!");
