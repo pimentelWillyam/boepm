@@ -1304,7 +1304,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
       // assunto = `(Resenha) SDS - PMPE - ${boToShare.NM_UNID_OPERACIONAL}`
       let municipio = BuscaMunicipioPorNome.execute(boToShare.MUNICIPIO)
       mensagem = `
-      *SDS - PMPE - DPO - ${municipio?.DIRETORIA || 'Diretoria não encontrada'} - ${boToShare.NM_UNID_OPERACIONAL} - AIS ${municipio?.AIS || 'AIS não encontrado'}*
+      *SDS - PMPE - DPO - ${municipio?.DIRETORIA || 'Diretoria não informada'} - ${boToShare.NM_UNID_OPERACIONAL} - AIS ${municipio?.AIS || 'AIS não informado'}*
       Mike: *M-${boToShare.CD_OCORRENCIA}/${boToShare.DH_FATO.substring(6, 10)}*
       Descrição da Natureza: *${boToShare.NATUREZAS[0].NATUREZA} / ${
         boToShare.CRIME_CONSUMADO === '0' ? 'TENTADO' : 'CONSUMADO'
