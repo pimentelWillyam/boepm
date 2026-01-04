@@ -1,0 +1,2618 @@
+[
+  {
+    "municipio": "ABREU E LIMA",
+    "area": "8",
+    "diretoria": "DIM",
+    "ome": "17º BPM (PAULISTA)"
+  },
+  {
+    "municipio": "ABREU E LIMACHA DE CRUZ (ABREU E LIMA)",
+    "area": "9",
+    "diretoria": "DIM",
+    "ome": "20º BPM (SAO LOURENCO DA MATA)"
+  },
+  {
+    "municipio": "AFOGADOS DA INGAZEIRA",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "AFRANIO",
+    "area": "26",
+    "diretoria": "DINTER 2",
+    "ome": "5º BPM (PETROLINA)"
+  },
+  {
+    "municipio": "AGRESTINA",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "AGUA PRETA",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "AGUAS BELAS",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "ALAGOINHA",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": "8ª CIPM (PESQUEIRA)"
+  },
+  {
+    "municipio": "ALIANCA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "ALTINHO",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "AMARAJI",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "21º BPM (VITORIA DE SANTO ANTAO)"
+  },
+  {
+    "municipio": "ANGELIM",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "ARACOIABA",
+    "area": "8",
+    "diretoria": "DIM",
+    "ome": "26º BPM (IGARASSU)"
+  },
+  {
+    "municipio": "ARARIPINA",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "9ª CIPM (ARARIPINA)"
+  },
+  {
+    "municipio": "ARCOVERDE",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "BARRA DE GUABIRABA",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "BARREIROS",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10ª CIPM (TAMANDARE)"
+  },
+  {
+    "municipio": "BELEM DE MARIA",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "BELEM DE SAO FRANCISCO",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": "1ª CIPM (BELEM DE SAO FRANCISCO)"
+  },
+  {
+    "municipio": "BELO JARDIM",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": "15º BPM (BELO JARDIM)"
+  },
+  {
+    "municipio": "BETANIA",
+    "area": "21",
+    "diretoria": "DINTER 2",
+    "ome": "14º BPM (SERRA TALHADA)"
+  },
+  {
+    "municipio": "BEZERROS",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "BODOCO",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "7º BPM (OURICURI)"
+  },
+  {
+    "municipio": "BOM CONSELHO",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "BOM JARDIMBIZARRA",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "6ª CIPM (LIMOEIRO)"
+  },
+  {
+    "municipio": "BOM JARDIM",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "22º BPM (SURUBIM)"
+  },
+  {
+    "municipio": "BONITO",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "BONITOBENTIVI (PALMARES)",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "BREJAO",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "BREJINHO",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "BREJO DA MADRE DE DEUS",
+    "area": "17",
+    "diretoria": "DINTER 1",
+    "ome": "24º BPM (SANTA CRUZ DO CAPIBARIBE)"
+  },
+  {
+    "municipio": "BUENOS AIRES",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "BUIQUE",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "CABO DE SANTO AGOSTINHO",
+    "area": "10",
+    "diretoria": "DIM",
+    "ome": "18º BPM (CABO DE SANTO AGOSTINHO)"
+  },
+  {
+    "municipio": "CABO DE SANTO AGOSTINHOJUSSARAL (VITORIA DE SANTO ANTAO)",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "21º BPM (VITORIA DE SANTO ANTAO)"
+  },
+  {
+    "municipio": "CABROBO",
+    "area": "25",
+    "diretoria": "DINTER 2",
+    "ome": "2ª CIPM (CABROBO)"
+  },
+  {
+    "municipio": "CACHOEIRINHA",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": "15º BPM (BELO JARDIM)"
+  },
+  {
+    "municipio": "CAETES",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "CALCADO",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "11ª CIPM (LAJEDO)"
+  },
+  {
+    "municipio": "CALUMBI",
+    "area": "21",
+    "diretoria": "DINTER 2",
+    "ome": "14º BPM (SERRA TALHADA)"
+  },
+  {
+    "municipio": "CAMARAGIBE",
+    "area": "9",
+    "diretoria": "DIM",
+    "ome": "20º BPM (SAO LOURENCO DA MATA)"
+  },
+  {
+    "municipio": "CAMOCIM DE SAO FELIX",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "CAMUTANGA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "CANHOTINHO",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "11ª CIPM (LAJEDO)"
+  },
+  {
+    "municipio": "CAPOEIRAS",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "CARNAIBA",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "CARNAUBEIRA DA PENHA",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": "1ª CIPM (BELEM DE SAO FRANCISCO)"
+  },
+  {
+    "municipio": "CARPINA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "CARUARU",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "CARUARUVILA CANAA (TORITAMA)",
+    "area": "17",
+    "diretoria": "DINTER 1",
+    "ome": "24º BPM (SANTA CRUZ DO CAPIBARIBE)"
+  },
+  {
+    "municipio": "CASINHAS",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "22º BPM (SURUBIM)"
+  },
+  {
+    "municipio": "CATENDE",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "CEDRO",
+    "area": "23",
+    "diretoria": "DINTER 2",
+    "ome": "8º BPM (SALGUEIRO)"
+  },
+  {
+    "municipio": "CHA DE ALEGRIA",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "21º BPM (VITORIA DE SANTO ANTAO)"
+  },
+  {
+    "municipio": "CHA GRANDE",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "5ª CIPM (GRAVATA)"
+  },
+  {
+    "municipio": "CONDADO",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "3ª CIPM (GOIANA)"
+  },
+  {
+    "municipio": "CORRENTES",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "CORTES",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "CUMARU",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "6ª CIPM (LIMOEIRO)"
+  },
+  {
+    "municipio": "CUPIRA",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "CUSTODIA",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "DORMENTES",
+    "area": "26",
+    "diretoria": "DINTER 2",
+    "ome": "5º BPM (PETROLINA)"
+  },
+  {
+    "municipio": "ESCADA",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "21º BPM (VITORIA DE SANTO ANTAO)"
+  },
+  {
+    "municipio": "EXU",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "7º BPM (OURICURI)"
+  },
+  {
+    "municipio": "FEIRA NOVA",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "6ª CIPM (LIMOEIRO)"
+  },
+  {
+    "municipio": "FERNANDO DE NORONHA",
+    "area": "27",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "FERREIROS",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "FLORES",
+    "area": "21",
+    "diretoria": "DINTER 2",
+    "ome": "14º BPM (SERRA TALHADA)"
+  },
+  {
+    "municipio": "FLORESTA",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": "1ª CIPM (BELEM DE SAO FRANCISCO)"
+  },
+  {
+    "municipio": "FREI MIGUELINHO",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "22º BPM (SURUBIM)"
+  },
+  {
+    "municipio": "GAMELEIRA",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "GARANHUNS",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "GLORIA DO GOITABAIRRO DA GLORIA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "GLORIA DO GOITA",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "21º BPM (VITORIA DE SANTO ANTAO)"
+  },
+  {
+    "municipio": "GLORIA DO GOITANOVA ITAENGA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "GOIANA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "3ª CIPM (GOIANA)"
+  },
+  {
+    "municipio": "GRANITO",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "7º BPM (OURICURI)"
+  },
+  {
+    "municipio": "GRAVATA",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "5ª CIPM (GRAVATA)"
+  },
+  {
+    "municipio": "IATI",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "IBIMIRIM",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "IBIRAJUBA",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "11ª CIPM (LAJEDO)"
+  },
+  {
+    "municipio": "IGARASSU",
+    "area": "8",
+    "diretoria": "DIM",
+    "ome": "26º BPM (IGARASSU)"
+  },
+  {
+    "municipio": "IGUARACY",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "INAJA",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": "4ª CIPM (PETROLANDIA)"
+  },
+  {
+    "municipio": "INGAZEIRA",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "IPOJUCA",
+    "area": "10",
+    "diretoria": "DIM",
+    "ome": "18º BPM (CABO DE SANTO AGOSTINHO)"
+  },
+  {
+    "municipio": "IPUBI",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "9ª CIPM (ARARIPINA)"
+  },
+  {
+    "municipio": "ITACURUBA",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": "1ª CIPM (BELEM DE SAO FRANCISCO)"
+  },
+  {
+    "municipio": "ITAIBA",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "ITAMARACA",
+    "area": "8",
+    "diretoria": "DIM",
+    "ome": "26º BPM (IGARASSU)"
+  },
+  {
+    "municipio": "ITAMBE",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "3ª CIPM (GOIANA)"
+  },
+  {
+    "municipio": "ITAPETIM",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "ITAPISSUMA",
+    "area": "8",
+    "diretoria": "DIM",
+    "ome": "26º BPM (IGARASSU)"
+  },
+  {
+    "municipio": "ITAQUITINGA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "3ª CIPM (GOIANA)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPES",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESALTO DA COLINA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESALTO DO SANTO ANTONIO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESALTO DOIS CARNEIRO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESALTO DOIS CARNEIROS",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESALTO JOSE DO PINHO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESB.JANGADA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESBARRA DE JANGADA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESBELA VISTA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESBONANCAS",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESBULHOES",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCAJUEIRO SECO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCANDEIAS",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCASCATA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCAVALEIRO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCENTRO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCENTRO (JABOATAO DOS GUARARAPES)",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCOMPORTA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCOMPORTAS",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCRISTO REDENDOR",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCRISTO REDENTOR",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO  I",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO - I",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO  II",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO - II",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO  III",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO - III",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO  IV",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO - IV",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO  V",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO - V",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO I",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO II",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO III",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO IV",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURADO V",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURCURAMA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESCURCURANA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESDOIS CARNEIRO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESDOIS CARNEIROS",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESDOM HELDER",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESENG VELHO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESENGENHO VELHO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESFLORIANO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESGUARARAPES",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESIBURA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESJ DE BAIXO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESJ DE CIMA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESJ.JORDAO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESJANGADINHA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESJARDIM JORDAO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESJARDIM MONTE VERDE",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESJARDIM PIEDADE",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESLOTEAMENTO 92",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMANASSU",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMARCOS FREIRE",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMASSANGANA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMASSARANDUBA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMONTE VERDE ALTO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMUMBECA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMURIBECA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMURIBECA DOS GUARARAPES",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMURIBEQUINHA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESNÃO INFORMADO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESNAO INFORMADO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESPACHECO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESPADRE ROMA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESPIEDADE",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESPORTA LARGA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESPRAZERES",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESQUADRO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESRIO DOCE",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESSANTANA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESSANTO ALEIXO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESSOCORRO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESSTO.ALEIXO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESSUCUPIRA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESTRES CARNEIROS",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESUR 06",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESUR 11",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESUR-06",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESUR-11",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESVARGEM FRIA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESVILA RICA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESVISTA ALEGRE",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESVISTA ALEGRE (JABOATAO DOS GUARARAPES)",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESZONA RURAL (JABOATAO DOS GUARARAPES)",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESZONA RURAL",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESZUMBI DO PACHECO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JAQUEIRA",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "JATAUBA",
+    "area": "17",
+    "diretoria": "DINTER 1",
+    "ome": "24º BPM (SANTA CRUZ DO CAPIBARIBE)"
+  },
+  {
+    "municipio": "JATOBA",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": "4ª CIPM (PETROLANDIA)"
+  },
+  {
+    "municipio": "JOAO ALFREDO",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "22º BPM (SURUBIM)"
+  },
+  {
+    "municipio": "JOAQUIM NABUCO",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "JUCATI",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "11ª CIPM (LAJEDO)"
+  },
+  {
+    "municipio": "JUPI",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "11ª CIPM (LAJEDO)"
+  },
+  {
+    "municipio": "JUREMA",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "11ª CIPM (LAJEDO)"
+  },
+  {
+    "municipio": "LAGOA DE ITAENGA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "LAGOA DO CARRO",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "LAGOA DO OURO",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "LAGOA DOS GATOS",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "LAGOA GRANDE",
+    "area": "25",
+    "diretoria": "DINTER 2",
+    "ome": "7ª CIPM (SANTA MARIA DA BOA VISTA)"
+  },
+  {
+    "municipio": "LAJEDO",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "11ª CIPM (LAJEDO)"
+  },
+  {
+    "municipio": "LIMOEIRO",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "6ª CIPM (LIMOEIRO)"
+  },
+  {
+    "municipio": "MACAPARANA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "MACHADOS",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "22º BPM (SURUBIM)"
+  },
+  {
+    "municipio": "MANARI",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "MARAIAL",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "MIRANDIBA",
+    "area": "23",
+    "diretoria": "DINTER 2",
+    "ome": "8º BPM (SALGUEIRO)"
+  },
+  {
+    "municipio": "MOREILANDIA",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "7º BPM (OURICURI)"
+  },
+  {
+    "municipio": "MORENO",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "NAZARE DA MATA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "OLINDA",
+    "area": "7",
+    "diretoria": "DIM",
+    "ome": "1º BPM (OLINDA)"
+  },
+  {
+    "municipio": "OROBO",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "22º BPM (SURUBIM)"
+  },
+  {
+    "municipio": "OROCO",
+    "area": "25",
+    "diretoria": "DINTER 2",
+    "ome": "2ª CIPM (CABROBO)"
+  },
+  {
+    "municipio": "OURICURI",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "7º BPM (OURICURI)"
+  },
+  {
+    "municipio": "PALMARES",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "PALMEIRINA",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "PANELAS",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "11ª CIPM (LAJEDO)"
+  },
+  {
+    "municipio": "PARANATAMA",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "PARNAMIRIM",
+    "area": "23",
+    "diretoria": "DINTER 2",
+    "ome": "8º BPM (SALGUEIRO)"
+  },
+  {
+    "municipio": "PASSIRA",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "6ª CIPM (LIMOEIRO)"
+  },
+  {
+    "municipio": "PAUDALHO",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "PAUDALHOCHA DE CRUZ(LOCALIDADE)",
+    "area": "9",
+    "diretoria": "DIM",
+    "ome": "20º BPM (SAO LOURENCO DA MATA)"
+  },
+  {
+    "municipio": "PAULISTA",
+    "area": "8",
+    "diretoria": "DIM",
+    "ome": "17º BPM (PAULISTA)"
+  },
+  {
+    "municipio": "PEDRA",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "PESQUEIRA",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": "8ª CIPM (PESQUEIRA)"
+  },
+  {
+    "municipio": "PETROLANDIA",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": "4ª CIPM (PETROLANDIA)"
+  },
+  {
+    "municipio": "PETROLINA",
+    "area": "26",
+    "diretoria": "DINTER 2",
+    "ome": "5º BPM (PETROLINA)"
+  },
+  {
+    "municipio": "POCAO",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": "8ª CIPM (PESQUEIRA)"
+  },
+  {
+    "municipio": "POMBOS",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "21º BPM (VITORIA DE SANTO ANTAO)"
+  },
+  {
+    "municipio": "PRIMAVERA",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "21º BPM (VITORIA DE SANTO ANTAO)"
+  },
+  {
+    "municipio": "QUIPAPA",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "QUIXABA",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "RECIFEAFLITOS",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEAFOGADOS",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEAGUA FRIA",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEALTO DO MANDU",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEALTO DO PASCOAL",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEALTO JOSE BONIFACIO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEALTO JOSE DO PINHO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEALTO SANTA TEREZINHA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEAPIPUCOS",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEAREIAS",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEARRUDA",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEARRUDA AIS-05",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEBARRO",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEBARRO AIS-03",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFEBEBERIBE",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEBOA VIAGEM",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFEBOA VISTA",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFEBOMBA DO HEMETERIO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEBONGI",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEBRASILIA TEIMOSA",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFEBREJO DA GUABIRABA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEBREJO DE BEBERIBE",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFECABANGA",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFECACOTE",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFECAJUEIRO",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFECHAO DE ESTRELA",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFECAMPINA DO BARRETO",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFECAMPO GRANDE",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFECASA AMARELA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFECASA FORTE",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFECAXANGA",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFECENTRO",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFECIDADE UNIVERSITARIA",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFECOELHOS",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFECOHAB",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFECOQUE",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFECOQUEIRAL",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFECORDEIRO",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFECORREGO DO JENIPAPO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFECURADO",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEDERBY",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEDO RECIFE",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFEDOIS IRMAOS",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEDOIS UNIDOS",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEENCRUZILHADA",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEENGENHO DO MEIO AIS-02",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEENGENHO DO MEIO",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEESPINHEIRO",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEESTANCIA",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEFUNDAO",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEGRACAS",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEGUABIRABA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEHIPODROMO",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEIBURA",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFEIBURA/MATA DO UCHOA",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEILHA DO LEITE",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFEILHA DO RETIRO",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEILHA JOANA BEZERRA",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFEIMBIRIBEIRA",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFEIPSEP",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFEIPUTINGA",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEIPUTINGA AIS-4",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEJAQUEIRA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEJARDIM SAO PAULO",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEJIQUIA",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEJORDAO",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFEJORDAO BAIXO",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFELINHA DO TIRO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEMACAXEIRA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEMADALENA",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEMANGABEIRA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEMANGUEIRA",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEMONTEIRO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEMORRO DA CONCEICAO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEMUSTARDINHA",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFENOVA DESCOBERTA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEPAISSANDU",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFEPARNAMIRIM",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEPASSARINHO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEPAU FERRO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEPEIXINHOS",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEPINA",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFEPOCO DA PANELA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEPONTO DE PARADA",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFEPORTO DA MADEIRA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEPRADO",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFERECIFE",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFERECIFE ANTIGO",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFEROSARINHO",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFESAN MARTIN",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFESANCHO",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFESANTANA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFESANTO AMARO",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFESANTO ANTONIO",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFESAO JOSE",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFESETUBAL",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFESITIO DOS PINTOS",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFESOLEDADE",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFETAMARINEIRA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFETEJIPIO",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFETORRE",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFETORREAO",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RECIFETORROES",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFETOTO",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEVARZEA",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "RECIFEVASCO DA GAMA",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEZUMBI",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": "13º BPM (CAMPO GRANDE)"
+  },
+  {
+    "municipio": "RIACHO DAS ALMAS",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "RIBEIRAO",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "RIO FORMOSO",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10ª CIPM (TAMANDARE)"
+  },
+  {
+    "municipio": "SAIRE",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "SALGADINHO",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "6ª CIPM (LIMOEIRO)"
+  },
+  {
+    "municipio": "SALGUEIRO",
+    "area": "23",
+    "diretoria": "DINTER 2",
+    "ome": "8º BPM (SALGUEIRO)"
+  },
+  {
+    "municipio": "SALOA",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "SANHARO",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": "8ª CIPM (PESQUEIRA)"
+  },
+  {
+    "municipio": "SANTA CRUZ",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "7º BPM (OURICURI)"
+  },
+  {
+    "municipio": "SANTA CRUZ DA BAIXA VERDE",
+    "area": "21",
+    "diretoria": "DINTER 2",
+    "ome": "14º BPM (SERRA TALHADA)"
+  },
+  {
+    "municipio": "SANTA CRUZ DO CAPIBARIBE",
+    "area": "17",
+    "diretoria": "DINTER 1",
+    "ome": "24º BPM (SANTA CRUZ DO CAPIBARIBE)"
+  },
+  {
+    "municipio": "SANTA FILOMENA",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "7º BPM (OURICURI)"
+  },
+  {
+    "municipio": "SANTA MARIA DA BOA VISTA",
+    "area": "25",
+    "diretoria": "DINTER 2",
+    "ome": "7ª CIPM (SANTA MARIA DA BOA VISTA)"
+  },
+  {
+    "municipio": "SANTA MARIA DO CAMBUCA",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "22º BPM (SURUBIM)"
+  },
+  {
+    "municipio": "SANTA TEREZINHA",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "SAO BENEDITO DO SUL",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "SAO BENTO DO UNA",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": "15º BPM (BELO JARDIM)"
+  },
+  {
+    "municipio": "SAO CAETANO",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": "15º BPM (BELO JARDIM)"
+  },
+  {
+    "municipio": "SAO JOAO",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "SAO JOAQUIM DO MONTE",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": "4º BPM (CARUARU)"
+  },
+  {
+    "municipio": "SAO JOSE DA COROA GRANDE",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10ª CIPM (TAMANDARE)"
+  },
+  {
+    "municipio": "SAO JOSE DO BELMONTE",
+    "area": "21",
+    "diretoria": "DINTER 2",
+    "ome": "14º BPM (SERRA TALHADA)"
+  },
+  {
+    "municipio": "SAO JOSE DO EGITO",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "SAO LOURENCO DA MATA",
+    "area": "9",
+    "diretoria": "DIM",
+    "ome": "20º BPM (SAO LOURENCO DA MATA)"
+  },
+  {
+    "municipio": "SAO VICENTE FERRER",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "SERRA TALHADA",
+    "area": "21",
+    "diretoria": "DINTER 2",
+    "ome": "14º BPM (SERRA TALHADA)"
+  },
+  {
+    "municipio": "SERRITA",
+    "area": "23",
+    "diretoria": "DINTER 2",
+    "ome": "8º BPM (SALGUEIRO)"
+  },
+  {
+    "municipio": "SERTANIA",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "SIRINHAEM",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10ª CIPM (TAMANDARE)"
+  },
+  {
+    "municipio": "SOLIDAO",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "SURUBIM",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "22º BPM (SURUBIM)"
+  },
+  {
+    "municipio": "TABIRA",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "TACAIMBO",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": "15º BPM (BELO JARDIM)"
+  },
+  {
+    "municipio": "TACARATU",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": "4ª CIPM (PETROLANDIA)"
+  },
+  {
+    "municipio": "TAMANDARE",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10ª CIPM (TAMANDARE)"
+  },
+  {
+    "municipio": "TAQUARITINGA DO NORTE",
+    "area": "17",
+    "diretoria": "DINTER 1",
+    "ome": "24º BPM (SANTA CRUZ DO CAPIBARIBE)"
+  },
+  {
+    "municipio": "TEREZINHA",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": "9º BPM (GARANHUNS)"
+  },
+  {
+    "municipio": "TERRA NOVA",
+    "area": "23",
+    "diretoria": "DINTER 2",
+    "ome": "8º BPM (SALGUEIRO)"
+  },
+  {
+    "municipio": "TIMBAUBA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "TORITAMA",
+    "area": "17",
+    "diretoria": "DINTER 1",
+    "ome": "24º BPM (SANTA CRUZ DO CAPIBARIBE)"
+  },
+  {
+    "municipio": "TRACUNHAEM",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "TRINDADE",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": "9ª CIPM (ARARIPINA)"
+  },
+  {
+    "municipio": "TRIUNFO",
+    "area": "21",
+    "diretoria": "DINTER 2",
+    "ome": "14º BPM (SERRA TALHADA)"
+  },
+  {
+    "municipio": "TUPANATINGA",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "TUPARETAMA",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": "23º BPM (AFOGADOS DA INGAZEIRA)"
+  },
+  {
+    "municipio": "VENTUROSA",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": "3º BPM (ARCOVERDE)"
+  },
+  {
+    "municipio": "VERDEJANTE",
+    "area": "23",
+    "diretoria": "DINTER 2",
+    "ome": "8º BPM (SALGUEIRO)"
+  },
+  {
+    "municipio": "VERTENTE DO LERIO",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": "22º BPM (SURUBIM)"
+  },
+  {
+    "municipio": "VERTENTES",
+    "area": "17",
+    "diretoria": "DINTER 1",
+    "ome": "24º BPM (SANTA CRUZ DO CAPIBARIBE)"
+  },
+  {
+    "municipio": "VICENCIA",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": "2º BPM (NAZARE DA MATA)"
+  },
+  {
+    "municipio": "VITORIA DE SANTO ANTAO",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": "21º BPM (VITORIA DE SANTO ANTAO)"
+  },
+  {
+    "municipio": "XEXEU",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESJARDIM MURIBECA",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESJARDIM PRAZERES",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": " 6º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESMANASSAU",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": "25º BPM (JABOATÃO/MORENO)"
+  },
+  {
+    "municipio": "JABOATAO DOS GUARARAPESTODOS OS BAIRROS - JABOATAO DOS GUARARAPES",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "RECIFECARMO",
+    "area": "1",
+    "diretoria": "DIM",
+    "ome": "16º BPM (SAO JOSE)"
+  },
+  {
+    "municipio": "RECIFECOHAB - LAGOA ENCANTADA",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": "19º BPM (BOA VIAGEM)"
+  },
+  {
+    "municipio": "RECIFECOHAB - TRES CARNEIROS",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "RECIFECORREGO JENIPAPO",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": "11º BPM (APIPUCOS)"
+  },
+  {
+    "municipio": "RECIFEIBURA DE BAIXO",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "RECIFEJORDAO ALTO",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "RECIFEAREIAS - JARDIM UCHOA",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": "12º BPM (VARZEA)"
+  },
+  {
+    "municipio": "TODA AREA - 10ª CIPM",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 10º BPM",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 11ª CIPM",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 11º BPM",
+    "area": "5",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 12º BPM",
+    "area": "4",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 13º BPM",
+    "area": "2",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 14º BPM",
+    "area": "21",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 15º BPM",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 17º BPM",
+    "area": "8",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 18º BPM",
+    "area": "10",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 19º BPM",
+    "area": "3",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 1ª CIPM",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 1º BPM",
+    "area": "7",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 20º BPM",
+    "area": "9",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 21º BPM",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 22º BPM",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 23º BPM",
+    "area": "20",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 24º BPM",
+    "area": "17",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 25º BPM",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 26º BPM",
+    "area": "8",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 2ª CIPM",
+    "area": "25",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 2º BPM",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 3ª CIPM",
+    "area": "11",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 3º BPM",
+    "area": "19",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 4ª CIPM",
+    "area": "22",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 4º BPM",
+    "area": "14",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 5ª CIPM",
+    "area": "12",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 5º BPM",
+    "area": "26",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 6ª CIPM",
+    "area": "16",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 6º BPM",
+    "area": "6",
+    "diretoria": "DIM",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 7ª CIPM",
+    "area": "25",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 7º BPM",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 8ª CIPM",
+    "area": "15",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 8º BPM",
+    "area": "23",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 9ª CIPM",
+    "area": "24",
+    "diretoria": "DINTER 2",
+    "ome": null
+  },
+  {
+    "municipio": "TODA AREA - 9º BPM",
+    "area": "18",
+    "diretoria": "DINTER 1",
+    "ome": null
+  },
+  {
+    "municipio": "BONITOBEM TI VI",
+    "area": "13",
+    "diretoria": "DINTER 1",
+    "ome": "10º BPM (PALMARES)"
+  }
+]
