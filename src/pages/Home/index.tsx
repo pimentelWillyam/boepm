@@ -92,6 +92,7 @@ import useStore from '../../store/bo'
 import useStoreUsuario from '../../store/usuario'
 import useStoreGlobal from '../../store/global'
 import { BuscaMunicipioPorNome } from '../../helpers/BuscaMunicipioPorNome'
+import { BuscaDiretoriaPorBatalhao } from '../../helpers/BuscaDiretoriaPorBatalhao'
 
 axios.defaults.validateStatus = () => true
 
@@ -1303,6 +1304,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
       })
       // assunto = `(Resenha) SDS - PMPE - ${boToShare.NM_UNID_OPERACIONAL}`
       let municipio = BuscaMunicipioPorNome.execute(boToShare.MUNICIPIO)
+      let diretoria = BuscaDiretoriaPorBatalhao.execute(boToShare.NM_UNID_OPERACIONAL)
       mensagem = `
       *SDS - PMPE - DPO - ${municipio?.DIRETORIA || 'Diretoria não informada'} - ${boToShare.NM_UNID_OPERACIONAL} - AIS ${municipio?.AIS || 'AIS não informado'}*
       Mike: *M-${boToShare.CD_OCORRENCIA}/${boToShare.DH_FATO.substring(6, 10)}*
