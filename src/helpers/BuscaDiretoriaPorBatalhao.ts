@@ -1,76 +1,72 @@
-// tipos.ts
-
-export type Batalhao =
-  | "1º BPM" | "2º BPM" | "3º BPM" | "4º BPM" | "5º BPM"
-  | "6º BPM" | "7º BPM" | "8º BPM" | "9º BPM" | "10º BPM"
-  | "11º BPM" | "12º BPM" | "13º BPM" | "14º BPM" | "15º BPM"
-  | "16º BPM" | "17º BPM" | "18º BPM" | "19º BPM" | "20º BPM"
-  | "21º BPM" | "22º BPM" | "23º BPM" | "24º BPM" | "25º BPM"
-  | "26º BPM"
-  | "1ª CIPM" | "2ª CIPM" | "3ª CIPM" | "4ª CIPM"
-  | "5ª CIPM" | "6ª CIPM" | "7ª CIPM" | "8ª CIPM"
-  | "9ª CIPM" | "10ª CIPM" | "11ª CIPM"
-  | "1º BPTRAN"
-  | "1º BIESP" | "2º BIESP"
-  | "BPA" | "BPCHOQUE" | "BPGD" | "BPRV" | "BPRP"
-  | "BOPE" | "BPTUR" | "CIPCAES" | "CIPMOTO"
-  | "BEPI" | "RPMON"
-  | "SDS / CORREGEDORIA" | "SDS / GTA" | "SDS / LEI SECA"
-  | "DASDH";
-
 export type Diretoria = 'Dim' | 'Dinter 1' | 'Dinter 2' | 'Diresp';
 
+export const BATALHAO_POR_DIRETORIA = {
+  'ESCOLHA A UNIDADE...': 'Dim',
 
-// diretorias.ts
+  '1º BATALHAO DE POLICIA MILITAR': 'Dim',
+  '6º BATALHAO DE POLICIA MILITAR': 'Dim',
+  '11º BATALHAO DE POLICIA MILITAR': 'Dim',
+  '12º BATALHAO DE POLICIA MILITAR': 'Dim',
+  '13º BATALHAO DE POLICIA MILITAR': 'Dim',
+  '16º BATALHAO DE POLICIA MILITAR': 'Dim',
+  '19º BATALHAO DE POLICIA MILITAR': 'Dim',
+  '20º BATALHAO DE POLICIA MILITAR': 'Dim',
+  '25º BATALHAO DE POLICIA MILITAR': 'Dim',
+  '26º BATALHAO DE POLICIA MILITAR': 'Dim',
 
-import { Batalhao } from './tipos';
+  '2º BATALHAO DE POLICIA MILITAR': 'Dinter 1',
+  '4º BATALHAO DE POLICIA MILITAR': 'Dinter 1',
+  '9º BATALHAO DE POLICIA MILITAR': 'Dinter 1',
+  '10º BATALHAO DE POLICIA MILITAR': 'Dinter 1',
+  '15º BATALHAO DE POLICIA MILITAR': 'Dinter 1',
+  '21º BATALHAO DE POLICIA MILITAR': 'Dinter 1',
+  '22º BATALHAO DE POLICIA MILITAR': 'Dinter 1',
+  '24º BATALHÃO DE POLÍCIA MILITAR': 'Dinter 1',
 
-export const DIM: readonly Batalhao[] = [
-  '1º BPM', '6º BPM', '11º BPM', '12º BPM', '13º BPM',
-  '16º BPM', '19º BPM', '20º BPM', '25º BPM', '26º BPM'
-];
+  '3º BATALHAO DE POLICIA MILITAR': 'Dinter 2',
+  '5º BATALHAO DE POLICIA MILITAR': 'Dinter 2',
+  '7º BATALHAO DE POLICIA MILITAR': 'Dinter 2',
+  '8º BATALHAO DE POLICIA MILITAR': 'Dinter 2',
+  '14º BATALHAO DE POLICIA MILITAR': 'Dinter 2',
+  '23º BATALHAO DE POLICIA MILITAR': 'Dinter 2',
 
-export const DINTER_1: readonly Batalhao[] = [
-  '2º BPM', '4º BPM', '9º BPM', '10º BPM', '15º BPM',
-  '21º BPM', '22º BPM', '24º BPM',
-  '5ª CIPM', '6ª CIPM', '8ª CIPM'
-];
+  '1ª COMPANHIA INDEPENDENTE DE POLICIA MILITAR': 'Dinter 2',
+  '2ª COMPANHIA INDEPENDENTE DA POLICIA MILITAR': 'Dinter 2',
+  '4ª COMPANHIA INDEPENDENTE DE POLICIA MILITAR': 'Dinter 2',
 
-export const DINTER_2: readonly Batalhao[] = [
-  '3º BPM', '5º BPM', '7º BPM', '8º BPM', '14º BPM',
-  '23º BPM',
-  '1ª CIPM', '2ª CIPM', '3ª CIPM', '4ª CIPM'
-];
+  '17º BATALHAO DE POLICIA MILITAR': 'Diresp',
+  '18º BATALHAO DE POLICIA MILITAR ': 'Diresp',
 
+  '1º BPTRAN - BATALHÃO DE POLICIAMENTO DE TRÂNSITO': 'Diresp',
+  '1º BIESP - BATALHÃO INTEGRADO ESPECIALIZADO DE POLICIAMENTO': 'Diresp',
+  '2º BIESP - BATALHÃO INTEGRADO ESPECIALIZADO DE POLICIAMENTO': 'Diresp',
+  'BATALHÃO DE POLICIAMENTO AMBIENTAL': 'Diresp',
+  'BATALHAO DE POLICIA DE CHOQUE': 'Diresp',
+  'BATALHAO DE POLICIA DE GUARDA': 'Diresp',
+  'BATALHAO DE POLICIA RODOVIARIA': 'Diresp',
+  'BATALHAO DE RADIO PATRULHA': 'Diresp',
+  'BATALHÃO DE OPERAÇÕES ESPECIAIS': 'Diresp',
+  'BPTUR - BATALHAO DE POLICIAMENTO AO TURISTA': 'Diresp',
+  'CIPCAES - COMPANHIA INDEPENDENTE DE POLICIAMENTO COM CÃES': 'Diresp',
+  'CIPMOTO - COMPANHIA INDEPENDENTE DE POLICIAMENTO COM MOTOS': 'Diresp',
+  'BEPI - BATALHÃO ESPECIALIZADO DE POLICIAMENTO DO INTERIOR': 'Diresp',
+  'REGIMENTO DE POLICIA MONTADA - DIAS CARDOSO': 'Diresp',
+  'CORREGEDORIA GERAL DE POLICIA': 'Diresp',
+  'GRUPAMENTO TÁTICO AEREO': 'Diresp',
+  'SDS / OPERAÇÃO LEI SECA': 'Diresp',
+  'DIRETORIA DE ARTICULAÇÃO SOCIAL E DIREITOS HUMANOS': 'Diresp'
+} as const;
 
-// busca-diretoria-por-batalhao.ts
+export type Batalhao = keyof typeof BATALHAO_POR_DIRETORIA;
 
-import { Batalhao, Diretoria } from './tipos';
-import { DIM, DINTER_1, DINTER_2 } from './diretorias';
-
-/**
- * Type guard para validar se a string é um Batalhão válido
- */
 function isBatalhao(value: string): value is Batalhao {
-  return (
-    DIM.includes(value as Batalhao) ||
-    DINTER_1.includes(value as Batalhao) ||
-    DINTER_2.includes(value as Batalhao)
-  );
+  return value in BATALHAO_POR_DIRETORIA;
 }
 
 export class BuscaDiretoriaPorBatalhao {
   static execute(codigoBatalhao?: string): Diretoria | null {
     if (!codigoBatalhao) return null;
-
-    if (!isBatalhao(codigoBatalhao)) {
-      return null;
-    }
-
-    if (DIM.includes(codigoBatalhao)) return 'Dim';
-    if (DINTER_1.includes(codigoBatalhao)) return 'Dinter 1';
-    if (DINTER_2.includes(codigoBatalhao)) return 'Dinter 2';
-
-    return null;
+    if (!isBatalhao(codigoBatalhao)) return null;
+    return BATALHAO_POR_DIRETORIA[codigoBatalhao];
   }
 }
