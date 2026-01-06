@@ -93,6 +93,7 @@ import useStoreUsuario from '../../store/usuario'
 import useStoreGlobal from '../../store/global'
 import { BuscaMunicipioPorNome } from '../../helpers/BuscaMunicipioPorNome'
 import { BuscaDiretoriaPorBatalhao } from '../../helpers/BuscaDiretoriaPorBatalhao'
+import { BuscaNomeBatalhaoReduzidoPorBatalhaoExtendido } from '../../helpers/BuscaNomeBatalhaoReduzidoPorBatalhaoExtendido'
 
 axios.defaults.validateStatus = () => true
 
@@ -1305,7 +1306,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
       // assunto = `(Resenha) SDS - PMPE - ${boToShare.NM_UNID_OPERACIONAL}`
       let municipio = BuscaMunicipioPorNome.execute(boToShare.ENDERECO.MUNICIPIO)
       mensagem = `
-      *SDS - PMPE - DPO - ${BuscaDiretoriaPorBatalhao.execute(boToShare.NM_UNID_OPERACIONAL) || 'Diretoria não informada'} - ${boToShare.NM_UNID_OPERACIONAL} - AIS ${municipio?.AIS || 'Não informado'}*
+      *SDS - PMPE - DPO - ${BuscaDiretoriaPorBatalhao.execute(boToShare.NM_UNID_OPERACIONAL) || 'Diretoria não informada'} - ${BuscaNomeBatalhaoReduzidoPorBatalhaoExtendido.execute(boToShare.NM_UNID_OPERACIONAL) || boToShare.NM_UNID_OPERACIONAL} - AIS ${municipio?.AIS || 'Não informado'}*
       Mike: *M-${boToShare.CD_OCORRENCIA}/${boToShare.DH_FATO.substring(6, 10)}*
       Descrição da Natureza: *${boToShare.NATUREZAS[0].NATUREZA} / ${
         boToShare.CRIME_CONSUMADO === '0' ? 'TENTADO' : 'CONSUMADO'
