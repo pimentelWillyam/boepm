@@ -13,6 +13,7 @@ export class BuscaMunicipioPorNome {
     public static execute(nomeMunicipio: string | undefined): Municipio | null {
         console.log("nome", nomeMunicipio)
         const municipioEncontrado = this.listaMunicipios.find(municipio => municipio.MUNICIPIO === nomeMunicipio);
+        if(municipioEncontrado?.MUNICIPIO === 'Recife') console.log('município recifense encontrado!')
         return municipioEncontrado ? municipioEncontrado : null;
     }
 }
