@@ -5,17 +5,37 @@ const path = require("path");
 const excelPath = path.join(__dirname, "excel.xlsx");
 
 const workbook = xlsx.readFile(excelPath);
-
 const sheetName = workbook.SheetNames[0];
 const sheet = workbook.Sheets[sheetName];
 
 const rows = xlsx.utils.sheet_to_json(sheet);
 
-const bairros = rows
-  .map(row => row["ID.MUNICIPIO"])
-  .filter(value => typeof value === "string" && value.startsWith("RECIFE"))
-  .map(value => value.replace(/^RECIFE/, "").trim())
-  .filter(value => value.length > 0);
+// Map para evitar duplicados (bairro + AIS)
+const bairrosMap = new Map();
+
+rows.forEach(row => {
+  const municipio = row["ID.MUNICIPIO"];
+  const area = row["ÁREA"];
+
+  if (typeof municipio === "string" && municipio.startsWith("RECIFE")) {
+    const bairro = municipio
+      .replace(/^RECIFE[-\s]*/i, "")
+      .trim();
+
+    if (bairro && area !== undefined && area !== null) {
+      const ais = `AIS ${String(area).trim()}`;
+      const key = `${bairro}|${ais}`;
+
+      if (!bairrosMap.has(key)) {
+        bairrosMap.set(key, { bairro, ais });
+      }
+    }
+  }
+});
+
+const bairros = Array.from(bairrosMap.values()).sort((a, b) =>
+  a.bairro.localeCompare(b.bairro, "pt-BR")
+);
 
 const bairrosRecife = {
   cidade: "Recife",
