@@ -1,121 +1,460 @@
 {
-  "cidade": "Recife",
-  "estado": "Pernambuco",
-  "total_bairros": 114,
   "bairros": [
-    "AFLITOS",
-    "AFOGADOS",
-    "AGUA FRIA",
-    "ALTO DO MANDU",
-    "ALTO DO PASCOAL",
-    "ALTO JOSE BONIFACIO",
-    "ALTO JOSE DO PINHO",
-    "ALTO SANTA TEREZINHA",
-    "APIPUCOS",
-    "AREIAS",
-    "ARRUDA",
-    "ARRUDA AIS-05",
-    "BARRO",
-    "BARRO AIS-03",
-    "BEBERIBE",
-    "BOA VIAGEM",
-    "BOA VISTA",
-    "BOMBA DO HEMETERIO",
-    "BONGI",
-    "BRASILIA TEIMOSA",
-    "BREJO DA GUABIRABA",
-    "BREJO DE BEBERIBE",
-    "CABANGA",
-    "CACOTE",
-    "CAJUEIRO",
-    "CHAO DE ESTRELA",
-    "CAMPINA DO BARRETO",
-    "CAMPO GRANDE",
-    "CASA AMARELA",
-    "CASA FORTE",
-    "CAXANGA",
-    "CENTRO",
-    "CIDADE UNIVERSITARIA",
-    "COELHOS",
-    "COHAB",
-    "COQUE",
-    "COQUEIRAL",
-    "CORDEIRO",
-    "CORREGO DO JENIPAPO",
-    "CURADO",
-    "DERBY",
-    "DO RECIFE",
-    "DOIS IRMAOS",
-    "DOIS UNIDOS",
-    "ENCRUZILHADA",
-    "ENGENHO DO MEIO AIS-02",
-    "ENGENHO DO MEIO",
-    "ESPINHEIRO",
-    "ESTANCIA",
-    "FUNDAO",
-    "GRACAS",
-    "GUABIRABA",
-    "HIPODROMO",
-    "IBURA",
-    "IBURA/MATA DO UCHOA",
-    "ILHA DO LEITE",
-    "ILHA DO RETIRO",
-    "ILHA JOANA BEZERRA",
-    "IMBIRIBEIRA",
-    "IPSEP",
-    "IPUTINGA",
-    "IPUTINGA AIS-4",
-    "JAQUEIRA",
-    "JARDIM SAO PAULO",
-    "JIQUIA",
-    "JORDAO",
-    "JORDAO BAIXO",
-    "LINHA DO TIRO",
-    "MACAXEIRA",
-    "MADALENA",
-    "MANGABEIRA",
-    "MANGUEIRA",
-    "MONTEIRO",
-    "MORRO DA CONCEICAO",
-    "MUSTARDINHA",
-    "NOVA DESCOBERTA",
-    "PAISSANDU",
-    "PARNAMIRIM",
-    "PASSARINHO",
-    "PAU FERRO",
-    "PEIXINHOS",
-    "PINA",
-    "POCO DA PANELA",
-    "PONTO DE PARADA",
-    "PORTO DA MADEIRA",
-    "PRADO",
-    "RECIFE",
-    "RECIFE ANTIGO",
-    "ROSARINHO",
-    "SAN MARTIN",
-    "SANCHO",
-    "SANTANA",
-    "SANTO AMARO",
-    "SANTO ANTONIO",
-    "SAO JOSE",
-    "SETUBAL",
-    "SITIO DOS PINTOS",
-    "SOLEDADE",
-    "TAMARINEIRA",
-    "TEJIPIO",
-    "TORRE",
-    "TORREAO",
-    "TORROES",
-    "TOTO",
-    "VARZEA",
-    "VASCO DA GAMA",
-    "ZUMBI",
-    "CARMO",
-    "COHAB - LAGOA ENCANTADA",
-    "COHAB - TRES CARNEIROS",
-    "CORREGO JENIPAPO",
-    "IBURA DE BAIXO",
-    "JORDAO ALTO",
-    "AREIAS - JARDIM UCHOA"
+    {
+      "bairro": "AFLITOS",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "AFOGADOS",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "AGUA FRIA",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "ALTO DO MANDU",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "ALTO DO PASCOAL",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "ALTO JOSE BONIFACIO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "ALTO JOSE DO PINHO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "ALTO SANTA TEREZINHA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "APIPUCOS",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "AREIAS",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "AREIAS - JARDIM UCHOA",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "ARRUDA",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "ARRUDA AIS-05",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "BARRO",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "BARRO AIS-03",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "BEBERIBE",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "BOA VIAGEM",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "BOA VISTA",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "BOMBA DO HEMETERIO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "BONGI",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "BRASILIA TEIMOSA",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "BREJO DA GUABIRABA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "BREJO DE BEBERIBE",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "CABANGA",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "CACOTE",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "CAJUEIRO",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "CAMPINA DO BARRETO",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "CAMPO GRANDE",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "CARMO",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "CASA AMARELA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "CASA FORTE",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "CAXANGA",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "CENTRO",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "CHAO DE ESTRELA",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "CIDADE UNIVERSITARIA",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "COELHOS",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "COHAB",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "COHAB - LAGOA ENCANTADA",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "COHAB - TRES CARNEIROS",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "COQUE",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "COQUEIRAL",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "CORDEIRO",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "CORREGO DO JENIPAPO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "CORREGO JENIPAPO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "CURADO",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "DERBY",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "DO RECIFE",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "DOIS IRMAOS",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "DOIS UNIDOS",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "ENCRUZILHADA",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "ENGENHO DO MEIO",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "ENGENHO DO MEIO AIS-02",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "ESPINHEIRO",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "ESTANCIA",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "FUNDAO",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "GRACAS",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "GUABIRABA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "HIPODROMO",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "IBURA",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "IBURA DE BAIXO",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "IBURA/MATA DO UCHOA",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "ILHA DO LEITE",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "ILHA DO RETIRO",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "ILHA JOANA BEZERRA",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "IMBIRIBEIRA",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "IPSEP",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "IPUTINGA",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "IPUTINGA AIS-4",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "JAQUEIRA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "JARDIM SAO PAULO",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "JIQUIA",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "JORDAO",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "JORDAO ALTO",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "JORDAO BAIXO",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "LINHA DO TIRO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "MACAXEIRA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "MADALENA",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "MANGABEIRA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "MANGUEIRA",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "MONTEIRO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "MORRO DA CONCEICAO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "MUSTARDINHA",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "NOVA DESCOBERTA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "PAISSANDU",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "PARNAMIRIM",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "PASSARINHO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "PAU FERRO",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "PEIXINHOS",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "PINA",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "POCO DA PANELA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "PONTO DE PARADA",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "PORTO DA MADEIRA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "PRADO",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "RECIFE",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "RECIFE ANTIGO",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "ROSARINHO",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "SAN MARTIN",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "SANCHO",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "SANTANA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "SANTO AMARO",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "SANTO ANTONIO",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "SAO JOSE",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "SETUBAL",
+      "ais": "AIS 3"
+    },
+    {
+      "bairro": "SITIO DOS PINTOS",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "SOLEDADE",
+      "ais": "AIS 1"
+    },
+    {
+      "bairro": "TAMARINEIRA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "TEJIPIO",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "TORRE",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "TORREAO",
+      "ais": "AIS 2"
+    },
+    {
+      "bairro": "TORROES",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "TOTO",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "VARZEA",
+      "ais": "AIS 4"
+    },
+    {
+      "bairro": "VASCO DA GAMA",
+      "ais": "AIS 5"
+    },
+    {
+      "bairro": "ZUMBI",
+      "ais": "AIS 2"
+    }
   ]
 }
