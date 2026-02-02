@@ -259,7 +259,6 @@ const AdicionarEnvolvido: React.FC = () => {
   }
 
   function editarEndereco() {
-    // console.log('end: ', enderecoResidencial)
     setData({ ENDERECO: enderecoResidencial })
     navigation.navigate('Endereco', { editar: true })
   }
@@ -446,11 +445,7 @@ const AdicionarEnvolvido: React.FC = () => {
 
   async function handleAddEnvolvido(data: IEnvolvido) {
 
-    // console.log(tipoEnvolvimento)
     data.ID_TIPO_ENV_PESSOA = tipoEnvolvimento
-
-    // return;
-
     if (data.DATA_NASCIMENTO) {
       const dataValida = moment(
         data.DATA_NASCIMENTO,
@@ -494,7 +489,6 @@ const AdicionarEnvolvido: React.FC = () => {
 
       if (route.params.action === 'editar') {
         // Se tiver mudado o tipo de envolvimento da Pessoa, então deve-se excluir a assinatura.
-        // console.log('tipo env pessoa:', newData.ID_TIPO_ENV_PESSOA)
         if (
           newData.ID_TIPO_ENV_PESSOA !== '1' &&
           newData.ID_TIPO_ENV_PESSOA !== '3' &&
