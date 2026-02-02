@@ -128,10 +128,8 @@ const Login = () => {
       `Utilize seu Usuário e Senha do Expresso(Mesmo do SEI).`,
     )
 
-    // console.log(resp)
 
     // const res = await loginPresenter('marlon.castro', '16scm4mC#')
-    // console.log(res)
 
     //     Alert.alert(
     //       'Notas de Atualização',
@@ -141,18 +139,12 @@ const Login = () => {
     // Share.open.toString()
 
     // const sistema = DeviceInfo.getSystemName()
-    // console.log('Sistema:', sistema)
     // const ver = DeviceInfo.getSystemVersion()
-    // console.log('Versão:', ver)
     // DeviceInfo.getManufacturer().then((data) => {
-    //   console.log('Fabricante:', data)
     // })
     // const modelo = DeviceInfo.getModel()
-    // console.log('Modelo:', modelo)
     // const id = DeviceInfo.getUniqueId()
-    // console.log('Id Único:', id)
 
-    // // console.log(sha512.sha512_256('teste'))
     // Signature.toString()
 
     // WebView.toString()
@@ -165,10 +157,8 @@ const Login = () => {
     // }
     // Share.shareSingle(shareOptions)
     //   .then((res) => {
-    //     console.log(res)
     //   })
     //   .catch((err) => {
-    //     console.log(err)
     //   })
     // #################################################################
   }
@@ -183,7 +173,6 @@ const Login = () => {
           message ===
           'Atenção: O App do BOEPM que você está utilizando está desatualizado. A Versão minima deve ser 1.9.12!\n\nAtualize pressionando o Número da versão abaixo!'
         ) {
-          console.log("searchUpdates")
         }
         if (Config.ENVIRONMENT === Config.HML)
           Alert.alert('Erro de Login', message)
@@ -222,7 +211,6 @@ const Login = () => {
 //   const installApk = async (filePath: string) => {
 //     try {
 //         await InstallApk.install(filePath);
-//         console.log('APK instalado com sucesso!');
 //     } catch (error) {
 //         console.error('Falha na instalação:', error);
 //     }
@@ -239,7 +227,7 @@ const Login = () => {
         {
           text: 'SIM',
           onPress: () => {
-            console.log('feature a ser implementada')
+            
             // const urlApk = Config.urlEnvironments[Config.ENVIRONMENT].apkUrl
 
             // const filePath = `${RNFS.DocumentDirectoryPath}/policiaagil-sds.apk`
@@ -371,7 +359,7 @@ const Login = () => {
                 value={value}
                 icon="lock"
                 error={errors.senha}
-                onTouchStart={() => console.log("searchUpdates")}
+                onTouchStart={() => {}}
                 placeholder="Senha"
                 secureTextEntry={!show}
                 autoCapitalize="none"
@@ -403,7 +391,6 @@ const Login = () => {
           </DuvidasButton>
           <UpdateButton
             onLongPress={() => updateApk()}
-            onPress={() => console.log("searchUpdates")}
           >
             <TextVersao>
             {`${Config.APP_VERSION}`}
