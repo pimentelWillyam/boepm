@@ -12,12 +12,10 @@ import { BuscaAisPorBairro } from './BuscaAisPorBairro'
 export class BuscaMunicipioPorNome {
     private static listaMunicipios: Municipio[] = municipiosCompletos as Municipio[]
     public static execute(nomeMunicipio: string | undefined, nomeBairro: string | null): Municipio | null {
-        console.log("nome", nomeMunicipio)
         const municipioEncontrado = this.listaMunicipios.find(municipio => municipio.MUNICIPIO === nomeMunicipio);
         if(municipioEncontrado?.MUNICIPIO === 'RECIFE') {
-            console.log('município recifense encontrado!')
-            console.log('Buscando AIS por bairro')
-            municipioEncontrado.AIS = BuscaAisPorBairro.execute(nomeBairro) || ''
+            const AisEncontrada = BuscaAisPorBairro.execute(nomeBairro) || ''
+            municipioEncontrado.AIS = AisEncontrada
         }
         return municipioEncontrado ? municipioEncontrado : null;
     }
