@@ -25,4 +25,3 @@ fs.writeFileSync(
   'utf-8'
 )
 
-console.log('municipiosPernambuco.json criado com sucesso ✅')
