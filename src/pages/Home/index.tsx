@@ -1316,9 +1316,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
         message: mensagem,
         social: Share.Social.WHATSAPP,
       }
-      console.log("--- CONTEÚDO DA MENSAGEM ---")
-      console.log(shareOptions.message)
-      console.log("--- FIM DO CONTEÚDO DA MENSAGEM ---")
       Share.shareSingle(shareOptions)
         .then((res) => {})
         .catch((err) => {})
@@ -1404,7 +1401,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
 
   const statsBOs = async () => {
     // const token = await AsyncStorage.getItem('@BOEPM:refreshToken')
-    // console.log(token)
     setLoadingStats(true)
     try {
       const res = await axios.get(
