@@ -240,7 +240,6 @@ const Responsaveis = (props: any) => {
           setShowBoxLoading(false)
           setShowBoxInput(false)
           if (response.status === 201) {
-            // console.log(response.data)
             // if (!response.data.EMAIL) {
             //   Alert.alert(
             //     'Atenção',
