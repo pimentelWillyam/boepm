@@ -186,7 +186,6 @@ const Home: React.FC = () => {
     const bosNaoConcluidos = bos.filter(
       (item) => !item.BO_STATUS[item.BO_STATUS.length - 1].CRC && !item.ERRO,
     )
-    // console.log(JSON.stringify(bosNaoConcluidos))
     // return
     try {
       const res = await api.get<BO[]>('/bo/dadosGerais', {
@@ -732,7 +731,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                 }
 
                 if (res.status === 504 || res.status === 503) {
-                  console.log(JSON.stringify(novoBOUpload))
                   Alert.alert(
                     'Desculpe',
                     'No Momento seu BO não pode ser salvo no sistema, Verifique a sua VPN e tente novamente em instantes!',
@@ -806,7 +804,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
           Alert.alert('Desculpe', `${existeOcorrencia.data}`)
         }
       } catch (error) {
-        console.log('aqui')
         setShowBoxLoading(false)
         Alert.alert(
           'Desculpe',
@@ -910,7 +907,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
             // clearTimeout(timeout)
             // if (response.status === 200) {
             if (response.status === 201) {
-              // console.log('ok')
               cd_ocorrencia_boe = response.data.CD_NUMERO_BOE_COMPLEMENTAR
               setTextLoading('Atualizando Status...')
               try {
@@ -1041,8 +1037,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
         }
       } catch (error) {
         Alert.alert('Erro', `Verifique a sua Internet e sua VPN! ${error}`)
-        // console.log(`${error}`)
-        // setShowBoxLoading(false)
       }
 
       setShowBoxLoading(false)
