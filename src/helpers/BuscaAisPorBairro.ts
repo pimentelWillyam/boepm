@@ -1,12 +1,15 @@
-import bairrosRecife from '../bairrosRecife.json'
+import listaBairrosRecife from '../bairrosRecife.json'
 
-bairrosRecife.bairros.
 export class BuscaAisPorBairro {
-    private static listaBairros: Municipio[] = municipiosCompletos as Municipio[]
-    public static execute(nomeBairro: string | null):  string | null {
-        console.log('nome: ', nomeBairro)
-        bairrosRecife.bairros.filter((bairros) => bairros.bairro === nomeBairro)
-        console.log('bairros recife:', bairrosRecife.bairros)
+  public static execute(nomeBairro: string | null): string {
+    if (!nomeBairro) {
+      return ''
     }
-}
 
+    const bairroEncontrado = listaBairrosRecife.bairros.find(
+      bairro => bairro.bairro === nomeBairro
+    )
+
+    return bairroEncontrado?.ais.replace("AIS ", "") ?? ''
+  }
+}
