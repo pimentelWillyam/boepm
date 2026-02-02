@@ -124,7 +124,6 @@ export default function Endereco(): JSX.Element {
       },
     }
     setData(novoEndereco)
-    // console.log(novoEndereco)
     navigation.goBack()
   }
 
