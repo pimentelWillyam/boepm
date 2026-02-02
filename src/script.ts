@@ -50,4 +50,3 @@ fs.writeFileSync(
   "utf-8"
 );
 
-console.log("Arquivo bairrosRecife.json gerado com sucesso!");
