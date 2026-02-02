@@ -302,8 +302,6 @@ export default function Visualizar(): JSX.Element {
             //   source.cancel()
             // }, 10000)
             try {
-              // console.log('crc =>>', res.data.crc)
-
               if (Config.ENVIRONMENT === Config.STAGE) {
                 response = {
                   data: {
@@ -705,7 +703,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
   }
 
   const handleData = (data) => {
-    console.log('aqio', data)
   }
   return (
     <>
