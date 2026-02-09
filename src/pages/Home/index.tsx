@@ -1283,9 +1283,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
             }, de cor ${obj.NM_COR_OBJETO || 'Não informada'}`
             objetos += `\n\tQuantidade: ${obj.QTD_OBJETO || 'Não informada'}`
             objetos += `\n\tValor: ${obj.VL_VALOR || 'Não informado'}`
-            objetos += `\n\tEm posse de *${
-              somenteIniciais(obj.NOME_ENVOLVIDO) || 'DESCONHECIDO'
-            }*\n`
+
         }
       })
       // assunto = `(Resenha) SDS - PMPE - ${boToShare.NM_UNID_OPERACIONAL}`
