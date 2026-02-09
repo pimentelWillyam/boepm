@@ -1251,12 +1251,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
             objetos += `\n\t${obj.NM_MARCA} ${obj.NM_MODELO}, de cor ${
               obj.NM_COR_OBJETO || 'Não informada'
             }`
-            objetos += `\n\tCalibre: ${
-              obj.ID_OBJ_ARMA ? obj.ID_OBJ_ARMA.VL_CALIBRE : 'Não informado'
-            }`
-            objetos += `\n\tEm posse de *${
-              somenteIniciais(obj.NOME_ENVOLVIDO) || 'DESCONHECIDO'
-            }*\n`
             break
           case '6': // Entorpecentes
             objetos += `\n->${'  '}${obj.NM_TIPO_OBJETO}`
