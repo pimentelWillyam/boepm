@@ -1291,7 +1291,8 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
       mensagem = `*SDS - PMPE - DPO - ${BuscaDiretoriaPorBatalhao.execute(boToShare.NM_UNID_OPERACIONAL) || 'Diretoria não informada'}* 
 *${BuscaNomeBatalhaoReduzidoPorBatalhaoExtendido.execute(boToShare.NM_UNID_OPERACIONAL) || boToShare.NM_UNID_OPERACIONAL} - AIS ${municipio?.AIS || 'Não informado'} / ${municipio?.MUNICIPIO}*
 
-Mike: *M-${boToShare.CD_OCORRENCIA}/${boToShare.DH_FATO.substring(6, 10)}*
+MIKE:
+*${boToShare.CD_OCORRENCIA}/${boToShare.DH_FATO.substring(6, 10)}*
 
 
 
