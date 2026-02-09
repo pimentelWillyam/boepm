@@ -1226,9 +1226,6 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
             objetos += `\n\tPlaca: ${
               obj.ID_VEICULO ? obj.ID_VEICULO.CD_PLACA : ''
             }`
-            objetos += `\n\tEm posse de *${
-              somenteIniciais(obj.NOME_ENVOLVIDO) || 'DESCONHECIDO'
-            }*\n`
             break
           case '4': // Celular
             objetos += `\n->${'  '}${obj.NM_TIPO_OBJETO} `
