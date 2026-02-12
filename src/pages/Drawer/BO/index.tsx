@@ -26,6 +26,7 @@ const BO: React.FC = () => {
         initialRouteName="TranscricaoRegistro"
         backBehavior="order"
         screenOptions={{
+          headerShown: false,
           drawerActiveTintColor: '#666',
           drawerActiveBackgroundColor: '#f2f2f2',
           drawerInactiveTintColor: 'grey',
