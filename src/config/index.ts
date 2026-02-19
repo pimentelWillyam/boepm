@@ -1,7 +1,7 @@
 
 export default class Config {
 
-  public static APP_VERSION = '1.9.80'
+  public static APP_VERSION = '1.9.81'
   
   public static UPDATE_MESSAGE = 'Uma nova versão do aplicativo está disponível. Por favor, atualize para a versão mais recente para continuar usando o aplicativo sem interrupções.'
 
@@ -13,7 +13,7 @@ export default class Config {
 
   public static PROD = 3
 
-  public static ENVIRONMENT = Config.HML
+  public static ENVIRONMENT = Config.STAGE
 
   public static urlEnvironments = [
     {
