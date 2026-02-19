@@ -2,13 +2,16 @@
   "name": "bids-boepm-app",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest --passWithNoTests",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "clean:apk": "if exist android\\app\\build\\outputs\\apk rmdir /s /q android\\app\\build\\outputs\\apk",
+    "android:stage": "react-native run-android --variant=stageDebug",
+    "android:prod": "react-native run-android --variant=prodDebug",
     "build:android:debug": "cd android && gradlew.bat assembleDebug",
-    "build:android:release": "cd android && gradlew.bat assembleRelease",
+    "build:android:stage": "yarn run clean:apk && cd android && gradlew.bat assembleStageRelease",
+    "build:android:prod": "yarn run clean:apk && cd android && gradlew.bat assembleProdRelease",
     "update:android:stage": "stallion publish-bundle --upload-path=ggti/boepm-app/stage --platform=android --release-note=\"Release para o stallion ota feita via CLI - WILLYAM PIMENTEL\"",
     "update:android:prod": "stallion publish-bundle --upload-path=ggti/boepm-app/prod --platform=android --release-note=\"Release para o stallion ota feita via CLI - WILLYAM PIMENTEL\""
   },
