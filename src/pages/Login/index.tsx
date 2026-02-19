@@ -32,6 +32,8 @@ import {
 // import RNFS from 'react-native-fs'
 // import InstallApk from 'react-native-install-apk';
 
+import { useStallionUpdate, sync, restart } from 'react-native-stallion'
+
 import { useForm, Controller } from 'react-hook-form'
 import { SignatureViewRef } from 'react-native-signature-canvas'
 import Geolocation from 'react-native-geolocation-service'
@@ -219,7 +221,7 @@ const Login = () => {
   const updateApk = async () => {
     Alert.alert(
       'Atenção',
-      'Tem certeza que deseja baixar e reinstalar o Aplicativo BOEPM?',
+      'Tem certeza que deseja forçar uma atualização do BOEPM?',
       [
         {
           text: 'AGORA NÃO',
@@ -227,7 +229,8 @@ const Login = () => {
         {
           text: 'SIM',
           onPress: () => {
-            
+            sync()
+            restart()
             // const urlApk = Config.urlEnvironments[Config.ENVIRONMENT].apkUrl
 
             // const filePath = `${RNFS.DocumentDirectoryPath}/policiaagil-sds.apk`
