@@ -1,4 +1,5 @@
 <resources>
-  <string name="StallionProjectId">6951963f3a49a4460313da01</string>
-  <string name="StallionAppToken">spb_U0N1tMa_vuL1ErTYJEEy-iKGMaecmdhYLQhbpCJ-Co</string>
+  <string name="app_name">BOEPM</string>
+  <string name="StallionProjectId">699857e3e9c95d966b5d2fc2</string>
+  <string name="StallionAppToken">spb_HI7pBt08klV1H1hGPyV2JiyKys8YZoB5g4fgIoq7SO</string>
 </resources>
