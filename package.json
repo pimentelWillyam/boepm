@@ -10,7 +10,7 @@
     "build:android:debug": "cd android && gradlew.bat assembleDebug",
     "build:android:release": "cd android && gradlew.bat assembleRelease",
     "update:android:stage": "stallion publish-bundle --upload-path=ggti/boepm-stage --platform=android --release-note=\"Release para o stallion ota feita via CLI - WILLYAM PIMENTEL\"",
-    "update:android:prod": "stallion publish-bundle --upload-path=ggti/boepm-prod --platform=android --release-note=\"Release para o stallion ota feita via CLI - WILLYAM PIMENTEL\""
+    "update:android:prod": "echo \"Ambiente inválido, você está em stage\""
   },
   "dependencies": {
     "@hookform/resolvers": "^1.3.4",
