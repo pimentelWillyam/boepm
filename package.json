@@ -11,8 +11,7 @@
     "android:prod": "react-native run-android --variant=prodDebug --appId com.bidsboepmapp",
     "build:android:debug": "cd android && gradlew.bat assembleDebug",
     "build:android:release": "cd android && gradlew.bat assembleRelease",
-    "update:android:stage": "echo \"Ambiente inválido, você está em prod\"",
-    "update:android:prod": "stallion publish-bundle --upload-path=ggti/boepm-prod/main --platform=android --release-note=\"Release para o stallion ota feita via CLI - WILLYAM PIMENTEL\""
+    "update:android": "stallion publish-bundle --upload-path=ggti/boepm-prod/main --platform=android --release-note=\"Release para o stallion ota feita via CLI - WILLYAM PIMENTEL\""
   },
   "dependencies": {
     "@hookform/resolvers": "^1.3.4",
