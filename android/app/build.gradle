@@ -171,28 +171,6 @@ android {
         }
     }
 
-    // mudança
-
-    flavorDimensions "environment"
-
-productFlavors {
-
-    stage {
-        dimension "environment"
-        applicationIdSuffix ".stage"
-        versionNameSuffix "-stage"
-
-        resValue "string", "app_name", "BOEPM HML"
-    }
-
-    prod {
-        dimension "environment"
-
-        resValue "string", "app_name", "BOEPM"
-    }
-}
-
-   
     splits {
         abi {
             reset()
