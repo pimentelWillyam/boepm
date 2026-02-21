@@ -9,8 +9,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "build:android:debug": "cd android && gradlew.bat assembleDebug",
     "build:android": "cd android && gradlew.bat assembleRelease",
-    "update:android:stage": "stallion publish-bundle --upload-path=ggti/boepm-stage/main --platform=android --release-note=\"Release para o stallion ota feita via CLI - WILLYAM PIMENTEL\"",
-    "update:android:prod": "echo \"Ambiente inválido, você está em stage\""
+    "update:android": "stallion publish-bundle --upload-path=ggti/boepm-stage/main --platform=android --release-note=\"Release para o stallion ota feita via CLI - WILLYAM PIMENTEL\""
   },
   "dependencies": {
     "@hookform/resolvers": "^1.3.4",
