@@ -139,7 +139,6 @@ const AdicionarEnvolvido: React.FC = () => {
     setIdentGeneroSelecionado('1')
     setSexoSelecionado('1')
     const unsubscribe = navigation.addListener('focus', () => {
-
       if (envolvido) {
         if (Object.keys(envolvido).length !== 0) {
           if (envolvido.MODUS_OPERANDI) setModus(envolvido.MODUS_OPERANDI)
@@ -444,7 +443,6 @@ const AdicionarEnvolvido: React.FC = () => {
   }
 
   async function handleAddEnvolvido(data: IEnvolvido) {
-
     data.ID_TIPO_ENV_PESSOA = tipoEnvolvimento
     if (data.DATA_NASCIMENTO) {
       const dataValida = moment(
@@ -483,7 +481,7 @@ const AdicionarEnvolvido: React.FC = () => {
         newData.ID_SEXO = '1'
       }
 
-      if (newData.ID_GENERO === '0'){
+      if (newData.ID_GENERO === '0') {
         newData.ID_GENERO = '1'
       }
 

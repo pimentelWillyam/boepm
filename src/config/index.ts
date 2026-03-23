@@ -1,9 +1,8 @@
-
 export default class Config {
-
   public static APP_VERSION = '1.9.80'
-  
-  public static UPDATE_MESSAGE = 'Uma nova versão do aplicativo está disponível. Por favor, atualize para a versão mais recente para continuar usando o aplicativo sem interrupções.'
+
+  public static UPDATE_MESSAGE =
+    'Uma nova versão do aplicativo está disponível. Por favor, atualize para a versão mais recente para continuar usando o aplicativo sem interrupções.'
 
   public static DEV = 0
 
@@ -23,8 +22,7 @@ export default class Config {
       oneSignalKey: '0e8edc7a-76ff-47be-bd74-e92685c29064',
       urlAbis:
         'http://abis-gti-stage.apps.ocp-server.ati.pe.gov.br/wsCivil/BuscarPorRG',
-      urlInfopol:
-        'http://10.238.205.138:8080/api',
+      urlInfopol: 'http://10.238.205.138:8080/api',
     },
     {
       // STAGE

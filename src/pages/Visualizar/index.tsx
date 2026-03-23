@@ -702,8 +702,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
     setShowAssinatura(false)
   }
 
-  const handleData = (data) => {
-  }
+  const handleData = (data) => {}
   return (
     <>
       {showAssinatura && (

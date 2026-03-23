@@ -24,7 +24,6 @@ import {
   Linking,
 } from 'react-native'
 
-
 // import { NetworkInfo } from 'react-native-network-info'
 import { useNavigation } from '@react-navigation/native'
 import AsyncStorage from '@react-native-community/async-storage'
@@ -1283,13 +1282,22 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
             }, de cor ${obj.NM_COR_OBJETO || 'Não informada'}`
             objetos += `\n\tQuantidade: ${obj.QTD_OBJETO || 'Não informada'}`
             objetos += `\n\tValor: ${obj.VL_VALOR || 'Não informado'}`
-
         }
       })
       // assunto = `(Resenha) SDS - PMPE - ${boToShare.NM_UNID_OPERACIONAL}`
-      let municipio = BuscaMunicipioPorNome.execute(boToShare.ENDERECO.MUNICIPIO, boToShare.ENDERECO.BAIRRO)
-      mensagem = `*SDS - PMPE - DPO - ${BuscaDiretoriaPorBatalhao.execute(boToShare.NM_UNID_OPERACIONAL) || 'Diretoria não informada'} -* 
-*${BuscaNomeBatalhaoReduzidoPorBatalhaoExtendido.execute(boToShare.NM_UNID_OPERACIONAL) || boToShare.NM_UNID_OPERACIONAL}* 
+      const municipio = BuscaMunicipioPorNome.execute(
+        boToShare.ENDERECO.MUNICIPIO,
+        boToShare.ENDERECO.BAIRRO,
+      )
+      mensagem = `*SDS - PMPE - DPO - ${
+        BuscaDiretoriaPorBatalhao.execute(boToShare.NM_UNID_OPERACIONAL) ||
+        'Diretoria não informada'
+      } -* 
+*${
+        BuscaNomeBatalhaoReduzidoPorBatalhaoExtendido.execute(
+          boToShare.NM_UNID_OPERACIONAL,
+        ) || boToShare.NM_UNID_OPERACIONAL
+      }* 
 *AIS ${municipio?.AIS || 'Não informado'} / ${municipio?.MUNICIPIO}*
 
 *MIKE*:
@@ -1297,7 +1305,9 @@ ${boToShare.CD_OCORRENCIA}/${boToShare.DH_FATO.substring(6, 10)}
 
 
 
-*Descrição da Natureza:* ${boToShare.NATUREZAS[0].NATUREZA} / ${ boToShare.CRIME_CONSUMADO === '0' ? 'TENTADO' : 'CONSUMADO'} 
+*Descrição da Natureza:* ${boToShare.NATUREZAS[0].NATUREZA} / ${
+        boToShare.CRIME_CONSUMADO === '0' ? 'TENTADO' : 'CONSUMADO'
+      } 
 
 
 ${boToShare.DADOS_COMPLEMENTARES || 'Não Informado'}

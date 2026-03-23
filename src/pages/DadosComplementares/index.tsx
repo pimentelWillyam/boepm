@@ -31,7 +31,11 @@ import useStoreGlobal from '../../store/global'
 const DadosComplementares = (props: any) => {
   const { bos, editar } = useStore()
   const { bo } = useStoreGlobal()
-  const { control: formDadosComplementares, handleSubmit, errors } = useForm({
+  const {
+    control: formDadosComplementares,
+    handleSubmit,
+    errors,
+  } = useForm({
     defaultValues: {
       DADOS_COMPLEMENTARES: bo === 0 ? bos[bo].DADOS_COMPLEMENTARES : '',
     },
@@ -241,8 +245,7 @@ const DadosComplementares = (props: any) => {
           onPress={() =>
             handleProsseguir({
               DADOS_COMPLEMENTARES: dadosComplementares,
-            })
-          }
+            })}
         >
           <ButtonSeguirText>Prosseguir</ButtonSeguirText>
         </ButtonSeguir>

@@ -22,11 +22,7 @@ export function ModalAtualizacao() {
   const jaSincronizou = useRef(false)
 
   useEffect(() => {
-    if (
-      newReleaseBundle &&
-      currentlyRunningBundle &&
-      !jaPerguntou.current
-    ) {
+    if (newReleaseBundle && currentlyRunningBundle && !jaPerguntou.current) {
       const novaData = new Date(newReleaseBundle.createdAt).getTime()
       const atualData = new Date(currentlyRunningBundle.createdAt).getTime()
 

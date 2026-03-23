@@ -12,11 +12,8 @@ const useCadastroEfetivo = () => {
   const [showBoxLoading, setShowBoxLoading] = useState(false)
   const [showBoxInput, setShowBoxInput] = useState(false)
   const { usuario } = useStoreUsuario()
-  const {
-    responsaveis,
-    setResponsaveis,
-    delResponsaveis,
-  } = useStoreResponsaveis()
+  const { responsaveis, setResponsaveis, delResponsaveis } =
+    useStoreResponsaveis()
 
   // Remover Responsável da lista de PMs do Efetivo
   const removeResponsavel = useCallback(

@@ -1,4 +1,4 @@
-export type Diretoria = 'Dim' | 'Dinter 1' | 'Dinter 2' | 'Diresp';
+export type Diretoria = 'Dim' | 'Dinter 1' | 'Dinter 2' | 'Diresp'
 
 export const BATALHAO_POR_DIRETORIA = {
   'ESCOLHA A UNIDADE...': 'Dim',
@@ -54,19 +54,19 @@ export const BATALHAO_POR_DIRETORIA = {
   'CORREGEDORIA GERAL DE POLICIA': 'Diresp',
   'GRUPAMENTO TÁTICO AEREO': 'Diresp',
   'SDS / OPERAÇÃO LEI SECA': 'Diresp',
-  'DIRETORIA DE ARTICULAÇÃO SOCIAL E DIREITOS HUMANOS': 'Diresp'
-} as const;
+  'DIRETORIA DE ARTICULAÇÃO SOCIAL E DIREITOS HUMANOS': 'Diresp',
+} as const
 
-export type Batalhao = keyof typeof BATALHAO_POR_DIRETORIA;
+export type Batalhao = keyof typeof BATALHAO_POR_DIRETORIA
 
 function isBatalhao(value: string): value is Batalhao {
-  return value in BATALHAO_POR_DIRETORIA;
+  return value in BATALHAO_POR_DIRETORIA
 }
 
 export class BuscaDiretoriaPorBatalhao {
   static execute(codigoBatalhao?: string): Diretoria | null {
-    if (!codigoBatalhao) return null;
-    if (!isBatalhao(codigoBatalhao)) return null;
-    return BATALHAO_POR_DIRETORIA[codigoBatalhao];
+    if (!codigoBatalhao) return null
+    if (!isBatalhao(codigoBatalhao)) return null
+    return BATALHAO_POR_DIRETORIA[codigoBatalhao]
   }
 }

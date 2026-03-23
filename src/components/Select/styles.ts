@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components/native'
 import { DeepMap, FieldError } from 'react-hook-form'
 import { ItemValue } from '@react-native-picker/picker/typings/Picker'
-import { Picker } from '@react-native-picker/picker';
+import { Picker } from '@react-native-picker/picker'
 
 export const Container = styled.View``
 

@@ -372,8 +372,7 @@ export default function AdicionarObjeto() {
                 rules={{ required: true }}
                 selectedValue={categoriaSelecionada}
                 onValueChange={(itemIdTipoCat) =>
-                  setCategoriaSelecionada(itemIdTipoCat.toString() || '')
-                }
+                  setCategoriaSelecionada(itemIdTipoCat.toString() || '')}
               >
                 {categoriaJson
                   .filter((item) => item.ID_TIPO_OBJETO === tipoObj)

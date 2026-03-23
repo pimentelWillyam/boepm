@@ -209,7 +209,9 @@ function CardBO(props: PropsCardBO) {
                 online &&
                 // eslint-disable-next-line no-nested-ternary
                 (BO_DP ? (
-                  <TextDP style={{ color: '#2fc117', marginLeft: 5 }}>DP</TextDP>
+                  <TextDP style={{ color: '#2fc117', marginLeft: 5 }}>
+                    DP
+                  </TextDP>
                 ) : loading ? (
                   <ActivityIndicator
                     style={{ marginLeft: 9 }}

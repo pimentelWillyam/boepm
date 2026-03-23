@@ -130,7 +130,6 @@ const Login = () => {
       `Utilize seu Usuário e Senha do Expresso(Mesmo do SEI).`,
     )
 
-
     // const res = await loginPresenter('marlon.castro', '16scm4mC#')
 
     //     Alert.alert(
@@ -210,13 +209,13 @@ const Login = () => {
 
   const showPassword = () => setShow(!show)
 
-//   const installApk = async (filePath: string) => {
-//     try {
-//         await InstallApk.install(filePath);
-//     } catch (error) {
-//         console.error('Falha na instalação:', error);
-//     }
-// };
+  //   const installApk = async (filePath: string) => {
+  //     try {
+  //         await InstallApk.install(filePath);
+  //     } catch (error) {
+  //         console.error('Falha na instalação:', error);
+  //     }
+  // };
 
   const updateApk = async () => {
     Alert.alert(
@@ -392,11 +391,9 @@ const Login = () => {
             <Icon name="alert-triangle" size={18} color="#f00" />
             <TextGTI>Dúvidas</TextGTI>
           </DuvidasButton>
-          <UpdateButton
-            onLongPress={() => updateApk()}
-          >
+          <UpdateButton onLongPress={() => updateApk()}>
             <TextVersao>
-            {`${Config.APP_VERSION}`}
+              {`${Config.APP_VERSION}`}
               {/* {isAtualizado ? (
                 `${packagejson.version}${Config.ENVIRONMENT < 2 ? 'b' : ''}`
               ) : (
@@ -418,4 +415,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default Login

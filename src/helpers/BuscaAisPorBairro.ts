@@ -7,9 +7,9 @@ export class BuscaAisPorBairro {
     }
 
     const bairroEncontrado = listaBairrosRecife.bairros.find(
-      bairro => bairro.bairro === nomeBairro
+      (bairro) => bairro.bairro === nomeBairro,
     )
 
-    return bairroEncontrado?.ais.replace("AIS ", "") ?? ''
+    return bairroEncontrado?.ais.replace('AIS ', '') ?? ''
   }
 }

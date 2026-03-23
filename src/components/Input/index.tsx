@@ -121,8 +121,7 @@ const Input: React.FC<InputProps> = ({
               mtype
                 ? options
                 : {
-                    mask:
-                      'SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS',
+                    mask: 'SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS',
                     translation: {
                       // eslint-disable-next-line prettier/prettier
                       'S': function(val) {

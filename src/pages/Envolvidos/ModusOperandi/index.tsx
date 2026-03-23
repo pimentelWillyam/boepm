@@ -31,7 +31,11 @@ interface IModusOperandiOpcoes {
 export default function ModusOperandi(): JSX.Element {
   const { data, setData } = useStoreGlobal()
   // const [envolvido] = useState<IEnvolvido | null>(route.params.envolvido)
-  const { control: formModusOperandi, handleSubmit, errors } = useForm({
+  const {
+    control: formModusOperandi,
+    handleSubmit,
+    errors,
+  } = useForm({
     defaultValues: data.MODUS_OPERANDI ? data.MODUS_OPERANDI : {},
   })
   const navigation = useNavigation()

@@ -9,12 +9,11 @@ import { NavigationContainer } from '@react-navigation/native'
 import OneSignal from 'react-native-onesignal'
 import ImageEditor from '@react-native-community/image-editor'
 
+import { withStallion } from 'react-native-stallion'
 import Routes from './routes'
 import Config from './config'
 
 import { AuthProvider } from './contexts/auth'
-
-import {withStallion} from 'react-native-stallion'
 
 function App() {
   useEffect(() => {

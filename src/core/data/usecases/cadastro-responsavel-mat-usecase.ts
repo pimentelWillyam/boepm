@@ -5,7 +5,8 @@ import { BuscaResponsavelResponse } from '../../domain/usecases/protocols/respon
 import { HttpClient } from '../protocols/http-client'
 
 export default class BuscaResponsavelMatriculaImpl
-  implements BuscaResponsavelMatriculaUseCase {
+  implements BuscaResponsavelMatriculaUseCase
+{
   private responsavelRepository: ResponsavelRepository | null = null
 
   private httpClient: HttpClient
