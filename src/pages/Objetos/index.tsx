@@ -66,7 +66,7 @@ const Objetos = (props: any) => {
               editarBO({
                 ...bos[bo],
                 OBJETOS: bos[bo].OBJETOS.filter(
-                  (o) => o.ID_OBJETO !== objeto.ID_OBJETO,
+                  o => o.ID_OBJETO !== objeto.ID_OBJETO,
                 ),
               })
             }
@@ -91,7 +91,7 @@ const Objetos = (props: any) => {
   const changeEnvolvido = async (id: string, nome: string) => {
     if (bo === 0) {
       const objMudarEnvolvido = bos[bo].OBJETOS.find(
-        (item) => item.ID_OBJETO === idObjeto,
+        item => item.ID_OBJETO === idObjeto,
       )
 
       if (objMudarEnvolvido) {
@@ -99,7 +99,7 @@ const Objetos = (props: any) => {
         objMudarEnvolvido.ID_ENVOLVIDO = id as string
 
         const objs = [...bos[bo].OBJETOS]
-        const index = objs.findIndex((item) => item.ID_OBJETO === idObjeto)
+        const index = objs.findIndex(item => item.ID_OBJETO === idObjeto)
         objs.splice(index, 1, objMudarEnvolvido)
 
         editarBO({
@@ -125,15 +125,12 @@ const Objetos = (props: any) => {
   const removerFoto = useCallback(
     async (id: string) => {
       if (bo === 0) {
-        const obj = bos[bo].OBJETOS.find((o) => o.ID_OBJETO === id)
+        const obj = bos[bo].OBJETOS.find(o => o.ID_OBJETO === id)
         if (obj) {
           obj.FOTO = null
           editarBO({
             ...bos[bo],
-            OBJETOS: [
-              obj,
-              ...bos[bo].OBJETOS.filter((o) => o.ID_OBJETO !== id),
-            ],
+            OBJETOS: [obj, ...bos[bo].OBJETOS.filter(o => o.ID_OBJETO !== id)],
           })
         }
       } else {
@@ -149,7 +146,7 @@ const Objetos = (props: any) => {
       if (await requestPermission('CAMERA')) {
         if (bo === 0) {
           const objs = bos[bo].OBJETOS
-          const obj = objs.find((item) => item.ID_OBJETO === id) as IObjeto
+          const obj = objs.find(item => item.ID_OBJETO === id) as IObjeto
           if (obj.FOTO && !editar) {
             optionsFotoRef.current?.open()
             setIdFoto(id)
@@ -165,7 +162,7 @@ const Objetos = (props: any) => {
                   maxHeight: obj.ID_TIPO_OBJETO === '7' ? 1350 : 675,
                   includeBase64: true,
                 },
-                async (response) => {
+                async response => {
                   optionsFotoRef.current?.close()
                   if (!response.didCancel) {
                     let id_tipo_foto = '4'
@@ -197,7 +194,7 @@ const Objetos = (props: any) => {
                     else if (obj.FOTO) obj.FOTO.FOTO = response.base64 as string
 
                     const objIndex = objs.findIndex(
-                      (item) => item.ID_OBJETO === id,
+                      item => item.ID_OBJETO === id,
                     )
                     objs.splice(objIndex, 1, obj)
 
@@ -244,7 +241,7 @@ const Objetos = (props: any) => {
         <Lista
           data={bo === 0 ? bos[bo].OBJETOS : []}
           ListEmptyComponent={() => <Text>Nenhum Objeto adicionado!</Text>}
-          keyExtractor={(obj) => String(obj.ID_OBJETO)}
+          keyExtractor={obj => String(obj.ID_OBJETO)}
           renderItem={({ item }) => {
             return (
               <CardObjeto
@@ -313,7 +310,7 @@ const Objetos = (props: any) => {
             <ModalItemText>DESCONHECIDO</ModalItemText>
           </ModalItem>
           {bo === 0 &&
-            bos[bo].ENVOLVIDOS.map((envolvido) => (
+            bos[bo].ENVOLVIDOS.map(envolvido => (
               <ModalItem
                 onPress={() =>
                   changeEnvolvido(

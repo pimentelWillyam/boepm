@@ -45,9 +45,7 @@ export default function DadosProfissionais(): JSX.Element {
 
     let nm = null
     // ************** Busca Descrição de Profissão *******************
-    nm = profissaoJson.find(
-      (item) => item.ID_PROFISSAO === dataForm.ID_PROFISSAO,
-    )
+    nm = profissaoJson.find(item => item.ID_PROFISSAO === dataForm.ID_PROFISSAO)
     dadosProfissionais.NM_PROFISSAO = nm?.NM_PROFISSAO as string
 
     dadosProfissionais.ENDERECO_COMERCIAL = null
@@ -76,7 +74,7 @@ export default function DadosProfissionais(): JSX.Element {
             rules={{ required: true }}
             defaultValue="0"
           >
-            {profissaoJson.map((item) => {
+            {profissaoJson.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_PROFISSAO}

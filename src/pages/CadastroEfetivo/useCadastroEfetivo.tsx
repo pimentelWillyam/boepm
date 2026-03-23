@@ -58,7 +58,7 @@ const useCadastroEfetivo = () => {
           setShowBoxLoading(false)
         } else {
           const respJaExiste = responsaveis.find(
-            (item) => item.MATRICULA === data.MATRICULA,
+            item => item.MATRICULA === data.MATRICULA,
           )
           if (respJaExiste) {
             Alert.alert('Informação', 'Responsável já adicionado(a)!')
@@ -93,7 +93,7 @@ const useCadastroEfetivo = () => {
     async (data: { CPF: string }) => {
       setShowBoxLoading(true)
       const cpf: string = data.CPF.replace(/\D/gim, '')
-      const respJaExiste = responsaveis.find((item) => item.CPF === cpf)
+      const respJaExiste = responsaveis.find(item => item.CPF === cpf)
       if (respJaExiste) {
         Alert.alert('Informação', 'Responsável já adicionado(a)!')
         setShowBoxLoading(false)

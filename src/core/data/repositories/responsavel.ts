@@ -11,13 +11,13 @@ const useStoreResponsaveis = create<ResponsavelRepository>(
       responsaveis: [],
       clearResponsaveis: () => set(() => ({ responsaveis: [] })),
       setResponsaveis: (r: Responsavel) =>
-        set((state) => ({ responsaveis: [...state.responsaveis, r] })),
+        set(state => ({ responsaveis: [...state.responsaveis, r] })),
       delResponsaveis: (r: Responsavel) =>
-        set((state) => {
+        set(state => {
           return {
             responsaveis: [
               ...state.responsaveis.filter(
-                (resp) => resp.ID_USUARIO !== r.ID_USUARIO,
+                resp => resp.ID_USUARIO !== r.ID_USUARIO,
               ),
             ],
           }

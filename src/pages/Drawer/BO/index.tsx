@@ -138,9 +138,7 @@ const BO: React.FC = () => {
                   // color="#999"
                   color={
                     bos[bo].RESPONSAVEIS &&
-                    bos[bo].RESPONSAVEIS.find(
-                      (u) => u.CD_TIPO_ENVOLVIMENTO === 1,
-                    )
+                    bos[bo].RESPONSAVEIS.find(u => u.CD_TIPO_ENVOLVIMENTO === 1)
                       ? '#60A917'
                       : '#f00'
                   }

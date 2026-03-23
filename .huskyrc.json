@@ -1,6 +1,6 @@
 {
-    "hooks": {
-        "pre-commit": "lint-staged",
-        "pre-push": "npm version patch"
-    }
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "pre-push": "npm version patch"
+  }
 }

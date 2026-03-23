@@ -54,14 +54,14 @@ export default function Caracteristicas(): JSX.Element {
 
     // ************** Busca Descrição para Cor Cabelo *******************
     dadosCaracteristicas = corCabeloJson.find(
-      (item) => item.ID_COR_CABELO === caracteristicas.ID_COR_CABELO,
+      item => item.ID_COR_CABELO === caracteristicas.ID_COR_CABELO,
     )
     caracteristicas.NM_COR_CABELO =
       dadosCaracteristicas?.NM_COR_CABELO as string
 
     // ************** Busca Descrição Pelagem Facial *******************
     dadosCaracteristicas = pelagemFacialJson.find(
-      (item) =>
+      item =>
         item.ID_TIPO_PELAGEM_FACIAL === caracteristicas.ID_TIPO_PELAGEM_FACIAL,
     )
     caracteristicas.NM_TIPO_PELAGEM_FACIAL =
@@ -69,33 +69,33 @@ export default function Caracteristicas(): JSX.Element {
 
     // ************** Busca Descrição Aparencia *******************
     dadosCaracteristicas = aparenciaJson.find(
-      (item) => item.ID_TIPO_APARENCIA === caracteristicas.ID_TIPO_APARENCIA,
+      item => item.ID_TIPO_APARENCIA === caracteristicas.ID_TIPO_APARENCIA,
     )
     caracteristicas.NM_TIPO_APARENCIA =
       dadosCaracteristicas?.NM_TIPO_APARENCIA as string
 
     // ************** Busca Descrição Tipo Cabelo *******************
     dadosCaracteristicas = tipoCabeloJson.find(
-      (item) => item.ID_TIPO_CABELO === caracteristicas.ID_TIPO_CABELO,
+      item => item.ID_TIPO_CABELO === caracteristicas.ID_TIPO_CABELO,
     )
     caracteristicas.NM_TIPO_CABELO =
       dadosCaracteristicas?.NM_TIPO_CABELO as string
 
     // ************** Busca Descrição Cor Pele *******************
     dadosCaracteristicas = corPeleJson.find(
-      (item) => item.ID_COR_PELE === caracteristicas.ID_COR_PELE,
+      item => item.ID_COR_PELE === caracteristicas.ID_COR_PELE,
     )
     caracteristicas.NM_COR_PELE = dadosCaracteristicas?.NM_COR_PELE as string
 
     // ************** Busca Descrição Cor Olhos *******************
     dadosCaracteristicas = corOlhosJson.find(
-      (item) => item.ID_COR_OLHOS === caracteristicas.ID_COR_OLHOS,
+      item => item.ID_COR_OLHOS === caracteristicas.ID_COR_OLHOS,
     )
     caracteristicas.NM_COR_OLHOS = dadosCaracteristicas?.NM_COR_OLHOS as string
 
     // ************** Busca Descrição Defeito Fisico *******************
     dadosCaracteristicas = peculiaridades.find(
-      (item) =>
+      item =>
         item.ID_TIPO_DEFEITO_FISICO === caracteristicas.ID_TIPO_DEFEITO_FISICO,
     )
     caracteristicas.NM_TIPO_DEFEITO_FISICO =
@@ -103,8 +103,7 @@ export default function Caracteristicas(): JSX.Element {
 
     // ************** Busca Descrição Deficiencia  *******************
     dadosCaracteristicas = deficiencias.find(
-      (item) =>
-        item.ID_TIPO_DEFICIENCIA === caracteristicas.ID_TIPO_DEFICIENCIA,
+      item => item.ID_TIPO_DEFICIENCIA === caracteristicas.ID_TIPO_DEFICIENCIA,
     )
     caracteristicas.NM_TIPO_DEFICIENCIA =
       dadosCaracteristicas?.NM_TIPO_DEFICIENCIA as string
@@ -137,7 +136,7 @@ export default function Caracteristicas(): JSX.Element {
             rules={{ required: true }}
             defaultValue="0"
           >
-            {corPeleJson.map((item) => {
+            {corPeleJson.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_COR_PELE}
@@ -156,7 +155,7 @@ export default function Caracteristicas(): JSX.Element {
             rules={{ required: true }}
             defaultValue="0"
           >
-            {corCabeloJson.map((item) => {
+            {corCabeloJson.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_COR_CABELO}
@@ -175,7 +174,7 @@ export default function Caracteristicas(): JSX.Element {
             rules={{ required: true }}
             defaultValue="0"
           >
-            {tipoCabeloJson.map((item) => {
+            {tipoCabeloJson.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_TIPO_CABELO}
@@ -194,7 +193,7 @@ export default function Caracteristicas(): JSX.Element {
             rules={{ required: true }}
             defaultValue="0"
           >
-            {corOlhosJson.map((item) => {
+            {corOlhosJson.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_COR_OLHOS}
@@ -225,7 +224,7 @@ export default function Caracteristicas(): JSX.Element {
             rules={{ required: true }}
             defaultValue="0"
           >
-            {pelagemFacialJson.map((item) => {
+            {pelagemFacialJson.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_TIPO_PELAGEM_FACIAL}
@@ -244,7 +243,7 @@ export default function Caracteristicas(): JSX.Element {
             rules={{ required: true }}
             defaultValue="0"
           >
-            {aparenciaJson.map((item) => {
+            {aparenciaJson.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_TIPO_APARENCIA}
@@ -290,7 +289,7 @@ export default function Caracteristicas(): JSX.Element {
             rules={{ required: true }}
             defaultValue="0"
           >
-            {peculiaridades.map((item) => {
+            {peculiaridades.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_TIPO_DEFEITO_FISICO}
@@ -309,7 +308,7 @@ export default function Caracteristicas(): JSX.Element {
             rules={{ required: true }}
             defaultValue="8"
           >
-            {deficiencias.map((item) => {
+            {deficiencias.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_TIPO_DEFICIENCIA}

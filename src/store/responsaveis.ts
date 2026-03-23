@@ -17,13 +17,13 @@ const useStoreResponsaveis = create<State>(
       responsaveis: [],
       clearResponsaveis: () => set(() => ({ responsaveis: [] })),
       setResponsaveis: (r: IResponsavel) =>
-        set((state) => ({ responsaveis: [...state.responsaveis, r] })),
+        set(state => ({ responsaveis: [...state.responsaveis, r] })),
       delResponsaveis: (r: IResponsavel) =>
-        set((state) => {
+        set(state => {
           return {
             responsaveis: [
               ...state.responsaveis.filter(
-                (resp) => resp.ID_USUARIO !== r.ID_USUARIO,
+                resp => resp.ID_USUARIO !== r.ID_USUARIO,
               ),
             ],
           }

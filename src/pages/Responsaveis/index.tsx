@@ -90,7 +90,7 @@ const Responsaveis = (props: any) => {
 
   useEffect(() => {
     if (bo === 0) {
-      const patr = bos[0].RESPONSAVEIS.find((r) => r.CD_TIPO_ENVOLVIMENTO === 1)
+      const patr = bos[0].RESPONSAVEIS.find(r => r.CD_TIPO_ENVOLVIMENTO === 1)
       if (!patr) {
         setSemPatrulheiro(true)
       } else setSemPatrulheiro(false)
@@ -184,7 +184,7 @@ const Responsaveis = (props: any) => {
             if (bo === 0) {
               if (
                 bos[0].RESPONSAVEIS.find(
-                  (item) =>
+                  item =>
                     item.ID_USUARIO === id && item.CD_TIPO_ENVOLVIMENTO === 0,
                 )
               )
@@ -193,10 +193,10 @@ const Responsaveis = (props: any) => {
                   'Você não pode excluir o condutor da Ocorrência',
                 )
               const boSemOResponsavelExcluido = bos[0].RESPONSAVEIS.filter(
-                (item) => item.ID_USUARIO !== id,
+                item => item.ID_USUARIO !== id,
               )
               const patr = boSemOResponsavelExcluido.find(
-                (r) => r.CD_TIPO_ENVOLVIMENTO === 1,
+                r => r.CD_TIPO_ENVOLVIMENTO === 1,
               )
               const todosOsStatus = bos[0].BO_STATUS
               const status = todosOsStatus[todosOsStatus.length - 1]
@@ -359,7 +359,7 @@ const Responsaveis = (props: any) => {
         {loaded ? (
           <Lista
             data={bo === 0 ? bos[bo].RESPONSAVEIS : []}
-            keyExtractor={(item) => String(item.ID_USUARIO)}
+            keyExtractor={item => String(item.ID_USUARIO)}
             renderItem={({ item }) => {
               return (
                 <ItemCard

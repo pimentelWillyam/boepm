@@ -34,7 +34,7 @@ export const Input = styled.TextInput<InputPros>`
   height: 255px;
   margin: 20px;
 
-  ${(props) => {
+  ${props => {
     return (
       props.error &&
       css`

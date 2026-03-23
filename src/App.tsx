@@ -19,13 +19,11 @@ function App() {
   useEffect(() => {
     OneSignal.setAppId(Config.urlEnvironments[Config.ENVIRONMENT].oneSignalKey)
     ImageEditor.toString()
-    OneSignal.setNotificationOpenedHandler((_notification) => {})
-    OneSignal.setNotificationWillShowInForegroundHandler(
-      (notifReceivedEvent) => {
-        const notif = notifReceivedEvent.getNotification()
-        notifReceivedEvent.complete(notif)
-      },
-    )
+    OneSignal.setNotificationOpenedHandler(_notification => {})
+    OneSignal.setNotificationWillShowInForegroundHandler(notifReceivedEvent => {
+      const notif = notifReceivedEvent.getNotification()
+      notifReceivedEvent.complete(notif)
+    })
   }, [])
   return (
     <NavigationContainer>

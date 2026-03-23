@@ -57,10 +57,10 @@ function Envolvidos(props: any) {
               editar({
                 ...bos[bo],
                 ENVOLVIDOS: bos[bo].ENVOLVIDOS.filter(
-                  (e) => e.ID_ENVOLVIDO !== envolvido.ID_ENVOLVIDO,
+                  e => e.ID_ENVOLVIDO !== envolvido.ID_ENVOLVIDO,
                 ),
                 OBJETOS: [
-                  ...bos[bo].OBJETOS.map((o) => {
+                  ...bos[bo].OBJETOS.map(o => {
                     if (o.ID_ENVOLVIDO === envolvido.ID_ENVOLVIDO) {
                       return {
                         ...o,
@@ -117,7 +117,7 @@ function Envolvidos(props: any) {
         <Lista
           data={bo === 0 ? bos[0].ENVOLVIDOS : []}
           ListEmptyComponent={() => <Text>Nenhum Envolvido adicionado!</Text>}
-          keyExtractor={(env) => String(env.ID_ENVOLVIDO)}
+          keyExtractor={env => String(env.ID_ENVOLVIDO)}
           renderItem={({ item: envolvido }) => {
             return (
               <CardEnvolvido

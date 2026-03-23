@@ -53,42 +53,42 @@ export default function ModusOperandi(): JSX.Element {
 
     let nm = null
     nm = modusOperandiJson.find(
-      (item) => item.ID_MODUS_OPERANDI === dataForm.ID_FORMA_APROXIMACAO,
+      item => item.ID_MODUS_OPERANDI === dataForm.ID_FORMA_APROXIMACAO,
     )
     modusOperandi.NM_FORMA_APROXIMACAO = nm?.NM_MODUS_OPERANDI
 
     nm = modusOperandiJson.find(
-      (item) => item.ID_MODUS_OPERANDI === dataForm.ID_FORMA_ACAO_ABORDAGEM,
+      item => item.ID_MODUS_OPERANDI === dataForm.ID_FORMA_ACAO_ABORDAGEM,
     )
     modusOperandi.NM_FORMA_ACAO_ABORDAGEM = nm?.NM_MODUS_OPERANDI
 
     nm = modusOperandiJson.find(
-      (item) => item.ID_MODUS_OPERANDI === dataForm.ID_LOCAL_ENTRADA,
+      item => item.ID_MODUS_OPERANDI === dataForm.ID_LOCAL_ENTRADA,
     )
     modusOperandi.NM_LOCAL_ENTRADA = nm?.NM_MODUS_OPERANDI
 
     nm = modusOperandiJson.find(
-      (item) => item.ID_MODUS_OPERANDI === dataForm.ID_FORMA_ENTRADA,
+      item => item.ID_MODUS_OPERANDI === dataForm.ID_FORMA_ENTRADA,
     )
     modusOperandi.NM_FORMA_ENTRADA = nm?.NM_MODUS_OPERANDI
 
     nm = modusOperandiJson.find(
-      (item) => item.ID_MODUS_OPERANDI === dataForm.ID_FORMA_DE_EVASAO,
+      item => item.ID_MODUS_OPERANDI === dataForm.ID_FORMA_DE_EVASAO,
     )
     modusOperandi.NM_FORMA_DE_EVASAO = nm?.NM_MODUS_OPERANDI
 
     nm = modusOperandiJson.find(
-      (item) => item.ID_MODUS_OPERANDI === dataForm.ID_ALTERACOES_NO_LOCAL,
+      item => item.ID_MODUS_OPERANDI === dataForm.ID_ALTERACOES_NO_LOCAL,
     )
     modusOperandi.NM_ALTERACOES_NO_LOCAL = nm?.NM_MODUS_OPERANDI
 
     nm = modusOperandiJson.find(
-      (item) => item.ID_MODUS_OPERANDI === dataForm.ID_CRIMES_SEXUAIS,
+      item => item.ID_MODUS_OPERANDI === dataForm.ID_CRIMES_SEXUAIS,
     )
     modusOperandi.NM_CRIMES_SEXUAIS = nm?.NM_MODUS_OPERANDI
 
     nm = modusOperandiJson.find(
-      (item) => item.ID_MODUS_OPERANDI === dataForm.ID_ESTELIONATO,
+      item => item.ID_MODUS_OPERANDI === dataForm.ID_ESTELIONATO,
     )
     modusOperandi.NM_ESTELIONATO = nm?.NM_MODUS_OPERANDI
     setData({
@@ -117,8 +117,8 @@ export default function ModusOperandi(): JSX.Element {
             defaultValue="3001"
           >
             {modusOperandiOpcoes
-              .filter((item) => item.ID_TIPO_MODUS_OPERANDI === '3000')
-              .map((modus) => {
+              .filter(item => item.ID_TIPO_MODUS_OPERANDI === '3000')
+              .map(modus => {
                 return (
                   <Picker.Item
                     key={modus.ID_MODUS_OPERANDI}
@@ -137,8 +137,8 @@ export default function ModusOperandi(): JSX.Element {
             defaultValue="7001"
           >
             {modusOperandiOpcoes
-              .filter((item) => item.ID_TIPO_MODUS_OPERANDI === '7000')
-              .map((modus) => {
+              .filter(item => item.ID_TIPO_MODUS_OPERANDI === '7000')
+              .map(modus => {
                 return (
                   <Picker.Item
                     key={modus.ID_MODUS_OPERANDI}
@@ -157,8 +157,8 @@ export default function ModusOperandi(): JSX.Element {
             defaultValue="6001"
           >
             {modusOperandiOpcoes
-              .filter((item) => item.ID_TIPO_MODUS_OPERANDI === '6000')
-              .map((modus) => {
+              .filter(item => item.ID_TIPO_MODUS_OPERANDI === '6000')
+              .map(modus => {
                 return (
                   <Picker.Item
                     key={modus.ID_MODUS_OPERANDI}
@@ -177,8 +177,8 @@ export default function ModusOperandi(): JSX.Element {
             defaultValue="4001"
           >
             {modusOperandiOpcoes
-              .filter((item) => item.ID_TIPO_MODUS_OPERANDI === '4000')
-              .map((modus) => {
+              .filter(item => item.ID_TIPO_MODUS_OPERANDI === '4000')
+              .map(modus => {
                 return (
                   <Picker.Item
                     key={modus.ID_MODUS_OPERANDI}
@@ -197,8 +197,8 @@ export default function ModusOperandi(): JSX.Element {
             defaultValue="5001"
           >
             {modusOperandiOpcoes
-              .filter((item) => item.ID_TIPO_MODUS_OPERANDI === '5000')
-              .map((modus) => {
+              .filter(item => item.ID_TIPO_MODUS_OPERANDI === '5000')
+              .map(modus => {
                 return (
                   <Picker.Item
                     key={modus.ID_MODUS_OPERANDI}
@@ -217,8 +217,8 @@ export default function ModusOperandi(): JSX.Element {
             defaultValue="8000"
           >
             {modusOperandiOpcoes
-              .filter((item) => item.ID_TIPO_MODUS_OPERANDI === '8000')
-              .map((modus) => {
+              .filter(item => item.ID_TIPO_MODUS_OPERANDI === '8000')
+              .map(modus => {
                 return (
                   <Picker.Item
                     key={modus.ID_MODUS_OPERANDI}
@@ -237,8 +237,8 @@ export default function ModusOperandi(): JSX.Element {
             defaultValue="9000"
           >
             {modusOperandiOpcoes
-              .filter((item) => item.ID_TIPO_MODUS_OPERANDI === '9000')
-              .map((modus) => {
+              .filter(item => item.ID_TIPO_MODUS_OPERANDI === '9000')
+              .map(modus => {
                 return (
                   <Picker.Item
                     key={modus.ID_MODUS_OPERANDI}
@@ -257,8 +257,8 @@ export default function ModusOperandi(): JSX.Element {
             defaultValue="10000"
           >
             {modusOperandiOpcoes
-              .filter((item) => item.ID_TIPO_MODUS_OPERANDI === '10000')
-              .map((modus) => {
+              .filter(item => item.ID_TIPO_MODUS_OPERANDI === '10000')
+              .map(modus => {
                 return (
                   <Picker.Item
                     key={modus.ID_MODUS_OPERANDI}

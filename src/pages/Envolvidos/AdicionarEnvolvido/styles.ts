@@ -102,7 +102,7 @@ export const BoxMsgError = styled.View<MsgError>`
   width: 80%;
   opacity: 0.7;
 
-  ${(props) => {
+  ${props => {
     return (
       props.error &&
       css`

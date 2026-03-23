@@ -10,7 +10,7 @@ const useStoreUsuario = create<UsuarioRepository>(
     (set, _) => ({
       usuario: null,
       clearUsuario: () => set(() => ({ usuario: null })),
-      setUsuario: (u: Usuario) => set((state) => ({ usuario: u })),
+      setUsuario: (u: Usuario) => set(state => ({ usuario: u })),
     }),
     {
       name: '@BOEPM:usuario',

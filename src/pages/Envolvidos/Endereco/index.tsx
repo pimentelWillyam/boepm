@@ -95,7 +95,7 @@ export default function Endereco(): JSX.Element {
     endereco.ID_ENDERECO = uuid.v4().toString()
     let dadosEndereco = null
 
-    dadosEndereco = ufJson.find((item) => item.ID_UF === dataForm.ID_UF)
+    dadosEndereco = ufJson.find(item => item.ID_UF === dataForm.ID_UF)
     if (dadosEndereco) endereco.NM_UF = dadosEndereco.SIGLA_UF as string
 
     // dadosEndereco = pontoReferenciaJson.find(
@@ -105,10 +105,10 @@ export default function Endereco(): JSX.Element {
     //   endereco.NM_TP_PT_REF = dadosEndereco.NM_TP_PT_REF as string
 
     const municipio = municipiosNovos.find(
-      (m) => m.MUNICIPIO === dataForm.MUNICIPIO,
+      m => m.MUNICIPIO === dataForm.MUNICIPIO,
     )
 
-    const uf = ufJson.find((u) => u.ID_UF === ufSelecionada)
+    const uf = ufJson.find(u => u.ID_UF === ufSelecionada)
 
     const novoEndereco: { ENDERECO: IEndereco } = {
       ENDERECO: {
@@ -185,7 +185,7 @@ export default function Endereco(): JSX.Element {
   const setPrevUf = (ufStr: string) => {
     setUfSelecionada(ufStr)
     const listaMunicipios = municipiosNovos.filter(
-      (item) => item.ID_UF.toString() === ufStr,
+      item => item.ID_UF.toString() === ufStr,
     )
     setMunicipios(listaMunicipios)
   }
@@ -212,7 +212,7 @@ export default function Endereco(): JSX.Element {
             selectedValue={ufSelecionada}
             onValueChange={(itemValue: any) => setPrevUf(itemValue.toString())}
           >
-            {ufJson.map((item) => {
+            {ufJson.map(item => {
               if (item.ID_PAIS === '34')
                 return (
                   <Picker.Item
@@ -233,7 +233,7 @@ export default function Endereco(): JSX.Element {
             rules={{ required: true }}
             defaultValue="RECIFE"
           >
-            {municipios.map((municipio) => {
+            {municipios.map(municipio => {
               return (
                 <Picker.Item
                   key={municipio.MUNICIPIO}
@@ -373,7 +373,7 @@ export default function Endereco(): JSX.Element {
       >
         <View>
           {enderecos &&
-            enderecos.map((endereco) => {
+            enderecos.map(endereco => {
               return (
                 <ModalItem
                   key={endereco.idTrecho}

@@ -13,23 +13,23 @@ const useStore = create<BORepository>(
       limparBos: (bo: BO) => set(() => ({ bos: [] })),
       // Operação de Await para buscar os bos
       inicial: (bos: BO[]) => set(() => ({ bos: [...bos] })),
-      adicionar: (bo: BO) => set((state) => ({ bos: [bo, ...state.bos] })),
+      adicionar: (bo: BO) => set(state => ({ bos: [bo, ...state.bos] })),
       editar: (bo: BO) =>
-        set((state) => ({
+        set(state => ({
           bos: [
-            ...state.bos.map((b) => {
+            ...state.bos.map(b => {
               if (b.ID_BO === bo.ID_BO) return bo
               return b
             }),
           ],
         })),
       complementar: (bo: BO) =>
-        set((state) => ({ bos: [changeUUID(bo), ...state.bos] })),
+        set(state => ({ bos: [changeUUID(bo), ...state.bos] })),
       editarComplementado: (bo: BO) =>
-        set((state) => {
+        set(state => {
           if (bo.ID_BO_COMPLEMENTAR) {
             const boComplementado = state.bos.find(
-              (b) => b.ID_BO === bo.ID_BO_COMPLEMENTAR,
+              b => b.ID_BO === bo.ID_BO_COMPLEMENTAR,
             )
             if (boComplementado) {
               return {
@@ -37,7 +37,7 @@ const useStore = create<BORepository>(
                   bo,
                   { ...boComplementado, COMPLEMENTADO: 1 },
                   ...state.bos.filter(
-                    (b) =>
+                    b =>
                       b.ID_BO !== bo.ID_BO && b.ID_BO !== bo.ID_BO_COMPLEMENTAR,
                   ),
                 ],
@@ -46,15 +46,15 @@ const useStore = create<BORepository>(
           }
 
           return {
-            bos: [bo, ...state.bos.filter((b) => b.ID_BO !== bo.ID_BO)],
+            bos: [bo, ...state.bos.filter(b => b.ID_BO !== bo.ID_BO)],
           }
         }),
       excluir: (bo: BO) =>
-        set((state) => ({
-          bos: [...state.bos.filter((i) => i.ID_BO !== bo.ID_BO)],
+        set(state => ({
+          bos: [...state.bos.filter(i => i.ID_BO !== bo.ID_BO)],
         })),
       atualizarContador: (bo: BO) =>
-        set((state) => ({ bos: [...state.bos, bo] })),
+        set(state => ({ bos: [...state.bos, bo] })),
       responsaveis: [],
       usuario: null,
     }),

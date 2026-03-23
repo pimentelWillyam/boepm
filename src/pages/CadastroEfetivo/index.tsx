@@ -146,7 +146,7 @@ const CadastroEfetivo = () => {
       </ContainerButton>
       <Lista
         data={responsaveis}
-        keyExtractor={(item) => String(item.ID_USUARIO)}
+        keyExtractor={item => String(item.ID_USUARIO)}
         renderItem={({ item }) => {
           return (
             <ItemCard

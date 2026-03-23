@@ -29,7 +29,7 @@ export const InputInside = styled(TextInputMask)<InputInside>`
   border-radius: 5px;
   border: 1px solid #dfdfdf;
   margin-bottom: 10px;
-  ${(props) => {
+  ${props => {
     return (
       props.error &&
       css`

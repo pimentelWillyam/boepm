@@ -125,7 +125,7 @@ const BoxInput: React.FC<BoxProps> = ({
                   mask: printS(20),
                   translation: {
                     // eslint-disable-next-line prettier/prettier
-                  // eslint-disable-next-line func-names
+                    // eslint-disable-next-line func-names
                     S(val) {
                       return ascii().indexOf(val) >= 0 ? val : ''
                     },

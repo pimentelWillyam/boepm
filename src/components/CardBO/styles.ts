@@ -86,7 +86,7 @@ export const StatusText = styled.Text<PropsStatus>`
   font-weight: bold;
   border-radius: 8px;
 
-  ${(props) => {
+  ${props => {
     if (props.status === 0)
       return css`
         background-color: #fbefef;

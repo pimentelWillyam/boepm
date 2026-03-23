@@ -22,7 +22,7 @@ const Sign = ({ text, onOK }) => {
   }
 
   // Called after ref.current.getData()
-  const handleData = (data) => {}
+  const handleData = data => {}
 
   return (
     <SignatureScreen

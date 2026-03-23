@@ -5,4 +5,4 @@ module.exports = {
     'react-native-paper/babel',
     'react-native-reanimated/plugin', // deve ser sempre o último
   ],
-};
+}

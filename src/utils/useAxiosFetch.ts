@@ -24,14 +24,14 @@ const useAxiosFetch = (url: string, timeout?: number): Result => {
         cancelToken: source.token,
         timeout,
       })
-      .then((a) => {
+      .then(a => {
         if (!unmounted) {
           setStatus(a.status)
           setData(a.data)
           setLoading(false)
         }
       })
-      .catch((e) => {
+      .catch(e => {
         if (!unmounted) {
           setError(true)
           setStatus(e.status)

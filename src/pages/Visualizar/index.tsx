@@ -273,7 +273,7 @@ export default function Visualizar(): JSX.Element {
         BO_STATUS: status,
         ID_TIPO_DESFECHO: data.ID_TIPO_DESFECHO,
         NM_TIPO_DESFECHO: data.NM_TIPO_DESFECHO,
-        OBJETOS: bos[bo].OBJETOS.map((o) => {
+        OBJETOS: bos[bo].OBJETOS.map(o => {
           if (o.FOTO) {
             if (!o.FOTO.FOTO)
               return {
@@ -522,7 +522,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
 
   async function escolheDesfecho(data: any) {
     const desf = desfechoLocal.find(
-      (item) => item.DES_ID === data.ID_TIPO_DESFECHO,
+      item => item.DES_ID === data.ID_TIPO_DESFECHO,
     )
     if (desf) {
       modalizeDesfechoRef.current?.close()
@@ -552,7 +552,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
       )
     } else {
       let msg = ''
-      if (Config.ENVIRONMENT === Config.HML) {
+      if (false) {
         msg =
           'Este APP só é válido para TREINAMENTOS. Seu BO é inválido e não será encaminhado para DP'
       } else {
@@ -702,7 +702,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
     setShowAssinatura(false)
   }
 
-  const handleData = (data) => {}
+  const handleData = data => {}
   return (
     <>
       {showAssinatura && (
@@ -735,7 +735,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
               onEmpty={handleEmpty}
               onGetData={handleData}
               webStyle={style}
-              onOK={(s) => handleOK(s)}
+              onOK={s => handleOK(s)}
               descriptionText={`Assinatura de ${envolvido?.NOME_RAZAO_SOCIAL}`}
             />
             <View style={styles.row}>
@@ -757,7 +757,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
           ) : (
             <Certidao>
               {(!bos[bo].RESPONSAVEIS.find(
-                (resp) => resp.CD_TIPO_ENVOLVIMENTO === 1,
+                resp => resp.CD_TIPO_ENVOLVIMENTO === 1,
               ) ||
                 !bos[bo].DADOS_COMPLEMENTARES) && (
                 <RascunhoText>Rascunho</RascunhoText>
@@ -800,7 +800,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                   <SectionItem>
                     Naturezas:{' '}
                     <Negrito>
-                      {bos[bo].NATUREZAS.map((item) => `${item.NATUREZA}/`)}
+                      {bos[bo].NATUREZAS.map(item => `${item.NATUREZA}/`)}
                     </Negrito>
                   </SectionItem>
                   <SectionItem>
@@ -839,7 +839,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                   {bos[bo].ENVOLVIDOS.length === 0 ? (
                     <Negrito>ESTA OCORRÊNCIA NÃO POSSUI ENVOLVIDOS</Negrito>
                   ) : (
-                    bos[bo].ENVOLVIDOS.map((env) => (
+                    bos[bo].ENVOLVIDOS.map(env => (
                       <Negrito key={env.ID_ENVOLVIDO}>
                         {`${env.NOME_RAZAO_SOCIAL} (${env.NM_TIPO_ENVOLVIMENTO_PESSOA})`}
                       </Negrito>
@@ -852,7 +852,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                   {bos[bo].OBJETOS.length === 0 ? (
                     <Negrito>ESTA OCORRÊNCIA NÃO POSSUI OBJETOS</Negrito>
                   ) : (
-                    bos[bo].OBJETOS.map((obj) => (
+                    bos[bo].OBJETOS.map(obj => (
                       <SectionItem key={obj.ID_OBJETO}>
                         <Negrito key={obj.ID_OBJETO}>
                           {obj.NM_TIPO_OBJETO}
@@ -874,7 +874,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                     NÃO FORAM ADICIONADOS ENVOLVIDOS NESTA OCORRÊNCIA
                   </Negrito>
                 ) : (
-                  bos[bo].ENVOLVIDOS.map((env) => (
+                  bos[bo].ENVOLVIDOS.map(env => (
                     <SectionContent key={env.ID_ENVOLVIDO}>
                       <SectionCount
                         style={{
@@ -908,7 +908,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                           <Negrito> NÃO FOI INFORMADO NENHUM DOCUMENTO</Negrito>
                         </SectionItem>
                       ) : (
-                        env.DOCUMENTOS.map((doc) => (
+                        env.DOCUMENTOS.map(doc => (
                           <SectionItem key={doc.NUMERO}>
                             {doc.NM_TIPO_DOCUMENTO}: {doc.NUMERO}
                             <Negrito>
@@ -1287,7 +1287,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                         <SectionItem>
                           {'\n'}Usos da força necessários na abordagem deste
                           Envolvido: {'\n'}
-                          {env.USO_FORCA.map((forca) => {
+                          {env.USO_FORCA.map(forca => {
                             return (
                               <View key={forca.ID_TIPO_USO_FORCA}>
                                 <Icon name="check" size={15} color="#777" />
@@ -1345,7 +1345,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                           env.ID_TIPO_ENV_PESSOA === '8' ||
                           (env.ID_TIPO_ENV_PESSOA === '6' &&
                             bos[bo].NATUREZAS.find(
-                              (n) =>
+                              n =>
                                 n.ID_NATUREZA === '280' ||
                                 n.ID_NATUREZA === '331' ||
                                 n.ID_NATUREZA === '330' ||
@@ -1374,7 +1374,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                     NÃO FORAM ADICIONADOS OBJETOS NESTA OCORRÊNCIA
                   </Negrito>
                 ) : (
-                  bos[bo].OBJETOS.map((obj) => (
+                  bos[bo].OBJETOS.map(obj => (
                     <SectionContent key={obj.ID_OBJETO}>
                       <SectionCount
                         style={{
@@ -1589,7 +1589,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
               </Section>
               <Section>
                 <SectionTitle>Responsáveis</SectionTitle>
-                {bos[bo].RESPONSAVEIS.map((resp) => {
+                {bos[bo].RESPONSAVEIS.map(resp => {
                   return (
                     <SectionContent key={resp.ID_USUARIO}>
                       <SectionCount>
@@ -1623,7 +1623,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
                   )
                 })}
                 {!bos[bo].RESPONSAVEIS.find(
-                  (resp) => resp.CD_TIPO_ENVOLVIMENTO === 1,
+                  resp => resp.CD_TIPO_ENVOLVIMENTO === 1,
                 ) && (
                   <Negrito style={{ paddingLeft: 5, color: '#f00' }}>
                     Falta adicionar ao menos um patrulheiro
@@ -1658,13 +1658,13 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
               <Section>
                 <SectionTitle>Imagens Complementares</SectionTitle>
                 <SectionContent>
-                  {bos[bo].OBJETOS.every((item) => item.FOTO === null) ? (
+                  {bos[bo].OBJETOS.every(item => item.FOTO === null) ? (
                     <SectionItem>
                       <Negrito>NÃO FORAM ADIONADAS FOTOS NESTE BO</Negrito>
                     </SectionItem>
                   ) : (
                     bos[bo].OBJETOS.map(
-                      (obj) =>
+                      obj =>
                         obj.FOTO && (
                           <View
                             style={{
@@ -1745,7 +1745,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
               rules={{ required: true }}
               defaultValue="10"
             >
-              {desfechoLocal.map((desfeco) => {
+              {desfechoLocal.map(desfeco => {
                 return (
                   <Picker.Item
                     key={desfeco.DES_ID}
@@ -1772,7 +1772,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
             isPassword={false}
             name="CD_OCORRENCIA"
             label="Digite o Mike correto"
-            onChangeText={(text) => setMike(text)}
+            onChangeText={text => setMike(text)}
             value={mike}
           >
             <ContainerButtonChangeOcorrencia>
@@ -1791,7 +1791,8 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
               </ButtonVoltarChangeOcorrencia>
               <ButtonChangeOcorrencia
                 onPress={() =>
-                  mike && changeNumeroOcorrencia({ CD_OCORRENCIA: mike })}
+                  mike && changeNumeroOcorrencia({ CD_OCORRENCIA: mike })
+                }
               >
                 <Text
                   style={{
@@ -1820,7 +1821,7 @@ OME: ${res.data.USUARIO.CD_OPERACIONAL}
             isPassword
             name="SENHA"
             label="Digite novamente a sua senha de login"
-            onChangeText={(text) => setSenha(text)}
+            onChangeText={text => setSenha(text)}
             value={senha}
           >
             <ContainerButtonChangeOcorrencia>

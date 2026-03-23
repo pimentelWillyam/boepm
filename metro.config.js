@@ -1,4 +1,4 @@
-const { getDefaultConfig } = require('@react-native/metro-config');
+const { getDefaultConfig } = require('@react-native/metro-config')
 
 /**
  * Metro configuration
@@ -6,11 +6,13 @@ const { getDefaultConfig } = require('@react-native/metro-config');
  *
  * @type {import('metro-config').MetroConfig}
  */
-const config = getDefaultConfig(__dirname);
+const config = getDefaultConfig(__dirname)
 
 // Filtrar SVG dos assets para permitir importação como componente
-config.resolver.assetExts = config.resolver.assetExts.filter(ext => ext !== 'svg');
-config.resolver.sourceExts.push('svg');
+config.resolver.assetExts = config.resolver.assetExts.filter(
+  ext => ext !== 'svg',
+)
+config.resolver.sourceExts.push('svg')
 
 // Configurações de transformação
 config.transformer = {
@@ -21,7 +23,6 @@ config.transformer = {
       inlineRequires: true,
     },
   }),
-};
+}
 
-module.exports = config;
-
+module.exports = config

@@ -52,7 +52,7 @@ export const Select = styled.View<SelectProps>`
   width: 290px;
   height: 40px;
   background-color: #ffffff;
-  ${(props) => {
+  ${props => {
     return props.error
       ? css`
           border-color: #f00;

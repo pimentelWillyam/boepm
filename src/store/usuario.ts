@@ -15,7 +15,7 @@ const useStoreUsuario = create<State>(
     (set, _get) => ({
       usuario: null,
       clearUsuario: () => set(() => ({ usuario: null })),
-      setUsuario: (u: IUsuario) => set((state) => ({ usuario: u })),
+      setUsuario: (u: IUsuario) => set(state => ({ usuario: u })),
     }),
 
     {

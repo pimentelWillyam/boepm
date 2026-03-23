@@ -12,21 +12,21 @@ export default function changeUUID(bo: BO): BO {
     },
     ID_TIPO_DESFECHO: '',
     NM_TIPO_DESFECHO: '',
-    BO_STATUS: bo.BO_STATUS.filter((st) => st.ID_STATUS < 2),
+    BO_STATUS: bo.BO_STATUS.filter(st => st.ID_STATUS < 2),
   }
 
-  boTemp.OBJETOS.forEach((obj) => {
+  boTemp.OBJETOS.forEach(obj => {
     obj.ID_OBJETO = uuid.v4().toString()
   })
 
-  boTemp.ENVOLVIDOS.forEach((env) => {
+  boTemp.ENVOLVIDOS.forEach(env => {
     const idEnv = uuid.v4().toString()
 
     if (env.ENDERECO_RESIDENCIAL) {
       env.ENDERECO_RESIDENCIAL.ID_ENDERECO = uuid.v4().toString()
     }
 
-    boTemp.OBJETOS.forEach((obj) => {
+    boTemp.OBJETOS.forEach(obj => {
       if (obj.ID_ENVOLVIDO === env.ID_ENVOLVIDO) obj.ID_ENVOLVIDO = idEnv
     })
 

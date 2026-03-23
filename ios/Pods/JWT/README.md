@@ -4,6 +4,7 @@
 [![Pod Version](http://img.shields.io/cocoapods/v/JWT.svg?style=flat)](http://cocoadocs.org/docsets/JWT)
 [![Pod Platform](http://img.shields.io/cocoapods/p/JWT.svg?style=flat)](http://cocoadocs.org/docsets/JWT)
 [![Gitter](https://badges.gitter.im/ObjectiveC-JWT/community.svg)](https://gitter.im/ObjectiveC-JWT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 # JWT
 
 A [JSON Web Token][] implementation in Objective-C.
@@ -12,15 +13,15 @@ A [JSON Web Token][] implementation in Objective-C.
 
 # What's new in master and bleeding edge.
 
-* EC algorithms support.
-* Keys extraction from Pem files has been updated.
+- EC algorithms support.
+- Keys extraction from Pem files has been updated.
 
 ## EC algorithms support.
 
 ### Prerequisites.
 
-* Certificate and P12 for Public and Private keys accordingly.
-* Pem files with keys in *ANSI X9.63* format.
+- Certificate and P12 for Public and Private keys accordingly.
+- Pem files with keys in _ANSI X9.63_ format.
 
 ### Example.
 
@@ -38,16 +39,16 @@ id <JWTCryptoKeyProtocol> publicKey = [[JWTCryptoKeyPublic alloc] initWithPemEnc
 id <JWTAlgorithmDataHolderProtocol> holder = [JWTAlgorithmRSFamilyDataHolder new].signKey(privateKey).verifyKey(publicKey).algorithmName(JWTAlgorithmNameES256);
 ```
 
-
 # What's new in Version 3.0
 
-* Fluent style expanded.
-* Coding result types added.
-* Algorithms and data holders.
-* Algorithms and data holders chain.
-* Keys loaded from Pem files.
+- Fluent style expanded.
+- Coding result types added.
+- Algorithms and data holders.
+- Algorithms and data holders chain.
+- Keys loaded from Pem files.
 
 ## Introduction to Algorithms data holders and chain.
+
 You have an algorithm, a secret data and an unknown jwt token.
 Let's try to decode it.
 
@@ -160,6 +161,7 @@ else {
 
 You have a key in pem file. And you want to use it directly for sign/verify.
 Suppose, that "public_rsa.pem" and "private_rsa.pem" are public and private keys in pem format.
+
 ```objective-c
 // Load keys
 - (NSString *)pemKeyStringFromFileWithName:(NSString *)string inBundle:(NSBundle *)bundle {
@@ -216,11 +218,15 @@ Suppose, that "public_rsa.pem" and "private_rsa.pem" are public and private keys
 ```
 
 # Experiments in Version 2.0
+
 ## Whitelists possible algorithms.
+
 When you need to decode jwt by several algorithms you could specify their names in whitelist.
 Later this feature possible will migrate to options.
 For example, someone returns result or error.
+
 ### Limitations
+
 Restricted to pair (algorithm or none) due to limitations of unique `secret`.
 
 ```objective-c
@@ -240,8 +246,8 @@ else {
 
 # What's new in Version 2.0
 
-* Old plain style deprecated.
-* Use modern fluent style instead.
+- Old plain style deprecated.
+- Use modern fluent style instead.
 
 ```objective-c
 NSDictionary *payload = @{@"foo" : @"bar"};
@@ -269,6 +275,7 @@ Install via Cartfile:
 and `import JWT`
 
 # Documentation
+
 # Usage
 
 ## JWTBuilder
@@ -433,6 +440,7 @@ else {
 ```
 
 #### NSData
+
 You can also encode/decode using a secret that is represented as an NSData object
 
 ```objective-c
@@ -457,12 +465,13 @@ NSDictionary *payload = [JWTBuilder decodeMessage:jwtToken].secretData(secretDat
 
 The following algorithms are supported:
 
-* RS256
-* HS512 - HMAC using SHA-512.
-* HS256 / HS384 / HS512
-* None
+- RS256
+- HS512 - HMAC using SHA-512.
+- HS256 / HS384 / HS512
+- None
 
 ## RS256 usage.
+
 For example, you have your file with privateKey: `file.p12`.
 And you have a secret passphrase for that file: `secret`.
 
@@ -505,7 +514,6 @@ else {
     // error occurred.
 }
 ```
-
 
 Additional algorithms can be added by implementing the `JWTAlgorithm` protocol.
 

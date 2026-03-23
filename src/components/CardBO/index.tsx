@@ -242,10 +242,7 @@ function CardBO(props: PropsCardBO) {
               <ItemText>
                 Viatura:
                 {` ${data.DS_VIATURA} `}
-                <Negrito>
-{` - ${envolvimento}`}
-{' '}
- </Negrito>
+                <Negrito>{` - ${envolvimento}`} </Negrito>
               </ItemText>
               <ItemText>
                 Desfecho:

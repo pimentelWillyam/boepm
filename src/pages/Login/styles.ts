@@ -68,7 +68,7 @@ export const ButtonLogin = styled(Button)<ButtonLoginProps>`
   height: 40px;
   align-items: center;
   justify-content: space-around;
-  ${(props) => {
+  ${props => {
     return (
       props.enabled === false &&
       css`

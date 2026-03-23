@@ -18,7 +18,7 @@ export class BuscaMunicipioPorNome {
     nomeBairro: string | null,
   ): Municipio | null {
     const municipioEncontrado = this.listaMunicipios.find(
-      (municipio) => municipio.MUNICIPIO === nomeMunicipio,
+      municipio => municipio.MUNICIPIO === nomeMunicipio,
     )
     if (municipioEncontrado?.MUNICIPIO === 'RECIFE') {
       const AisEncontrada = BuscaAisPorBairro.execute(nomeBairro) || ''

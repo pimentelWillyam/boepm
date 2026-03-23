@@ -209,7 +209,7 @@ const DadosComplementares = (props: any) => {
             maxLength={4000}
             multiline
             numberOfLines={15}
-            onChangeText={(text) => setDadosComplementares(text)}
+            onChangeText={text => setDadosComplementares(text)}
             value={dadosComplementares}
             scrollEnabled
             textAlignVertical="top"
@@ -223,7 +223,7 @@ const DadosComplementares = (props: any) => {
               mask: printS(4000),
               translation: {
                 // eslint-disable-next-line prettier/prettier
-              // eslint-disable-next-line func-names
+                // eslint-disable-next-line func-names
                 S(val) {
                   return ascii().indexOf(val) >= 0 ? val : ''
                 },
@@ -245,7 +245,8 @@ const DadosComplementares = (props: any) => {
           onPress={() =>
             handleProsseguir({
               DADOS_COMPLEMENTARES: dadosComplementares,
-            })}
+            })
+          }
         >
           <ButtonSeguirText>Prosseguir</ButtonSeguirText>
         </ButtonSeguir>

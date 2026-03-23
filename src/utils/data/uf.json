@@ -1,1 +1,70 @@
-[{"ID_UF":"1","SIGLA_UF":"PE","NM_UF":"PERNAMBUCO","ID_PAIS":"34"},{"ID_UF":"2","SIGLA_UF":"AC","NM_UF":"ACRE","ID_PAIS":"34"},{"ID_UF":"3","SIGLA_UF":"AL","NM_UF":"ALAGOAS","ID_PAIS":"34"},{"ID_UF":"4","SIGLA_UF":"AM","NM_UF":"AMAZONAS","ID_PAIS":"34"},{"ID_UF":"5","SIGLA_UF":"AP","NM_UF":"AMAPA","ID_PAIS":"34"},{"ID_UF":"6","SIGLA_UF":"BA","NM_UF":"BAHIA","ID_PAIS":"34"},{"ID_UF":"7","SIGLA_UF":"CE","NM_UF":"CEARA","ID_PAIS":"34"},{"ID_UF":"8","SIGLA_UF":"DF","NM_UF":"DISTRITO FEDERAL","ID_PAIS":"34"},{"ID_UF":"9","SIGLA_UF":"ES","NM_UF":"ESPIRITO SANTO","ID_PAIS":"34"},{"ID_UF":"10","SIGLA_UF":"GO","NM_UF":"GOIAS","ID_PAIS":"34"},{"ID_UF":"11","SIGLA_UF":"MA","NM_UF":"MARANHAO","ID_PAIS":"34"},{"ID_UF":"12","SIGLA_UF":"MG","NM_UF":"MINAS GERAIS","ID_PAIS":"34"},{"ID_UF":"13","SIGLA_UF":"MS","NM_UF":"MATO GROSSO DO SUL","ID_PAIS":"34"},{"ID_UF":"14","SIGLA_UF":"MT","NM_UF":"MATO GROSSO","ID_PAIS":"34"},{"ID_UF":"15","SIGLA_UF":"PA","NM_UF":"PARA","ID_PAIS":"34"},{"ID_UF":"16","SIGLA_UF":"PB","NM_UF":"PARAIBA","ID_PAIS":"34"},{"ID_UF":"17","SIGLA_UF":"PI","NM_UF":"PIAUI","ID_PAIS":"34"},{"ID_UF":"18","SIGLA_UF":"PR","NM_UF":"PARANA","ID_PAIS":"34"},{"ID_UF":"19","SIGLA_UF":"RJ","NM_UF":"RIO DE JANEIRO","ID_PAIS":"34"},{"ID_UF":"20","SIGLA_UF":"RN","NM_UF":"RIO GRANDE DO NORTE","ID_PAIS":"34"},{"ID_UF":"21","SIGLA_UF":"RO","NM_UF":"RONDONIA","ID_PAIS":"34"},{"ID_UF":"22","SIGLA_UF":"RR","NM_UF":"RORAIMA","ID_PAIS":"34"},{"ID_UF":"23","SIGLA_UF":"RS","NM_UF":"RIO GRANDE DO SUL","ID_PAIS":"34"},{"ID_UF":"24","SIGLA_UF":"SC","NM_UF":"SANTA CATARINA","ID_PAIS":"34"},{"ID_UF":"25","SIGLA_UF":"SE","NM_UF":"SERGIPE","ID_PAIS":"34"},{"ID_UF":"26","SIGLA_UF":"SP","NM_UF":"SAO PAULO","ID_PAIS":"34"},{"ID_UF":"27","SIGLA_UF":"TO","NM_UF":"TOCANTINS","ID_PAIS":"34"},{"ID_UF":"28","SIGLA_UF":"-NI-","NM_UF":"NÃO INFORMADO","ID_PAIS":"34"}]
+[
+  { "ID_UF": "1", "SIGLA_UF": "PE", "NM_UF": "PERNAMBUCO", "ID_PAIS": "34" },
+  { "ID_UF": "2", "SIGLA_UF": "AC", "NM_UF": "ACRE", "ID_PAIS": "34" },
+  { "ID_UF": "3", "SIGLA_UF": "AL", "NM_UF": "ALAGOAS", "ID_PAIS": "34" },
+  { "ID_UF": "4", "SIGLA_UF": "AM", "NM_UF": "AMAZONAS", "ID_PAIS": "34" },
+  { "ID_UF": "5", "SIGLA_UF": "AP", "NM_UF": "AMAPA", "ID_PAIS": "34" },
+  { "ID_UF": "6", "SIGLA_UF": "BA", "NM_UF": "BAHIA", "ID_PAIS": "34" },
+  { "ID_UF": "7", "SIGLA_UF": "CE", "NM_UF": "CEARA", "ID_PAIS": "34" },
+  {
+    "ID_UF": "8",
+    "SIGLA_UF": "DF",
+    "NM_UF": "DISTRITO FEDERAL",
+    "ID_PAIS": "34"
+  },
+  {
+    "ID_UF": "9",
+    "SIGLA_UF": "ES",
+    "NM_UF": "ESPIRITO SANTO",
+    "ID_PAIS": "34"
+  },
+  { "ID_UF": "10", "SIGLA_UF": "GO", "NM_UF": "GOIAS", "ID_PAIS": "34" },
+  { "ID_UF": "11", "SIGLA_UF": "MA", "NM_UF": "MARANHAO", "ID_PAIS": "34" },
+  { "ID_UF": "12", "SIGLA_UF": "MG", "NM_UF": "MINAS GERAIS", "ID_PAIS": "34" },
+  {
+    "ID_UF": "13",
+    "SIGLA_UF": "MS",
+    "NM_UF": "MATO GROSSO DO SUL",
+    "ID_PAIS": "34"
+  },
+  { "ID_UF": "14", "SIGLA_UF": "MT", "NM_UF": "MATO GROSSO", "ID_PAIS": "34" },
+  { "ID_UF": "15", "SIGLA_UF": "PA", "NM_UF": "PARA", "ID_PAIS": "34" },
+  { "ID_UF": "16", "SIGLA_UF": "PB", "NM_UF": "PARAIBA", "ID_PAIS": "34" },
+  { "ID_UF": "17", "SIGLA_UF": "PI", "NM_UF": "PIAUI", "ID_PAIS": "34" },
+  { "ID_UF": "18", "SIGLA_UF": "PR", "NM_UF": "PARANA", "ID_PAIS": "34" },
+  {
+    "ID_UF": "19",
+    "SIGLA_UF": "RJ",
+    "NM_UF": "RIO DE JANEIRO",
+    "ID_PAIS": "34"
+  },
+  {
+    "ID_UF": "20",
+    "SIGLA_UF": "RN",
+    "NM_UF": "RIO GRANDE DO NORTE",
+    "ID_PAIS": "34"
+  },
+  { "ID_UF": "21", "SIGLA_UF": "RO", "NM_UF": "RONDONIA", "ID_PAIS": "34" },
+  { "ID_UF": "22", "SIGLA_UF": "RR", "NM_UF": "RORAIMA", "ID_PAIS": "34" },
+  {
+    "ID_UF": "23",
+    "SIGLA_UF": "RS",
+    "NM_UF": "RIO GRANDE DO SUL",
+    "ID_PAIS": "34"
+  },
+  {
+    "ID_UF": "24",
+    "SIGLA_UF": "SC",
+    "NM_UF": "SANTA CATARINA",
+    "ID_PAIS": "34"
+  },
+  { "ID_UF": "25", "SIGLA_UF": "SE", "NM_UF": "SERGIPE", "ID_PAIS": "34" },
+  { "ID_UF": "26", "SIGLA_UF": "SP", "NM_UF": "SAO PAULO", "ID_PAIS": "34" },
+  { "ID_UF": "27", "SIGLA_UF": "TO", "NM_UF": "TOCANTINS", "ID_PAIS": "34" },
+  {
+    "ID_UF": "28",
+    "SIGLA_UF": "-NI-",
+    "NM_UF": "NÃO INFORMADO",
+    "ID_PAIS": "34"
+  }
+]

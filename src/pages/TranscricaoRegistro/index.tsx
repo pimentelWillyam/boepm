@@ -199,7 +199,7 @@ const TranscricaoRegistro: React.FC = (props: any) => {
             text: 'SIM, Usar a minha localização',
             onPress: async () => {
               Geolocation.getCurrentPosition(
-                async (position) => {
+                async position => {
                   setLat(String(position.coords.latitude))
                   setLon(String(position.coords.longitude))
 
@@ -218,7 +218,7 @@ const TranscricaoRegistro: React.FC = (props: any) => {
                     })
                   } catch (error) {}
                 },
-                (error) => {
+                error => {
                   if (Config.ENVIRONMENT === Config.HML) {
                     Alert.alert('Erro', JSON.stringify(error))
                   }
@@ -294,7 +294,7 @@ const TranscricaoRegistro: React.FC = (props: any) => {
 
   const deletarNaturezas = (id: string) => {
     setNaturezasEscolhidas(
-      naturezasEscolhidas.filter((item) => item.ID_NATUREZA !== id),
+      naturezasEscolhidas.filter(item => item.ID_NATUREZA !== id),
     )
   }
 
@@ -383,17 +383,17 @@ const TranscricaoRegistro: React.FC = (props: any) => {
     newData.ERRO = false
     newData.NATUREZAS = []
     newData.ID_UNID_OPERACIONAL = ome
-    const unid = unidadeOperacional.find((item) => item.UNI_ID === ome)
+    const unid = unidadeOperacional.find(item => item.UNI_ID === ome)
     newData.NM_UNID_OPERACIONAL = unid?.UNI_DESCRICAO
     const localOcor = localOcorrenciaItems.find(
-      (item) => item.ID_LOCAL_OCORRENCIA === newData.ID_LOCAL_OCORRENCIA,
+      item => item.ID_LOCAL_OCORRENCIA === newData.ID_LOCAL_OCORRENCIA,
     )
     newData.NM_LOCAL_OCORRENCIA = localOcor?.NM_LOCAL_OCORRENCIA
     // const ptRefnm = ptref.find(
     //   (item) => item.ID_TP_PT_REF === newData.ENDERECO.ID_TP_PT_REF,
     // )
 
-    naturezasEscolhidas.forEach((item) => {
+    naturezasEscolhidas.forEach(item => {
       newData.NATUREZAS.push({
         ID_NATUREZA: item.ID_NATUREZA as string,
         NATUREZA: item.NATUREZA as string,
@@ -403,12 +403,12 @@ const TranscricaoRegistro: React.FC = (props: any) => {
     })
 
     const municipioFind = municipiosJson.find(
-      (m) => m.ID_MUNICIPIO.toString() === data.ENDERECO.ID_MUNICIPIO,
+      m => m.ID_MUNICIPIO.toString() === data.ENDERECO.ID_MUNICIPIO,
     )
 
     const municipioNome = municipioFind ? municipioFind.MUNICIPIO : 'RECIFE'
 
-    const ufFind = uf.find((item) => item.ID_UF === ufSelecionada)
+    const ufFind = uf.find(item => item.ID_UF === ufSelecionada)
 
     newData.ENDERECO = {
       ...data.ENDERECO,
@@ -426,7 +426,7 @@ const TranscricaoRegistro: React.FC = (props: any) => {
     if (naturezasEscolhidas.length === 0) {
       const idNat = formTranscricao.getValues().NATUREZA1
       const naturezaUnica = naturezasFato.find(
-        (nat) => nat.DES_NATUREZA_ID === idNat,
+        nat => nat.DES_NATUREZA_ID === idNat,
       )
       newData.NATUREZAS.push({
         ID_NATUREZA: naturezaUnica?.DES_NATUREZA_ID || '340',
@@ -453,8 +453,7 @@ const TranscricaoRegistro: React.FC = (props: any) => {
 
   const checkOcorrencia = useCallback(async () => {
     const boExisteOffline = bos.find(
-      (item) =>
-        item.CD_OCORRENCIA === formTranscricao.getValues('CD_OCORRENCIA'),
+      item => item.CD_OCORRENCIA === formTranscricao.getValues('CD_OCORRENCIA'),
     )
     if (!boExisteOffline) {
       // Então verifica online
@@ -493,7 +492,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
     if (omeStr !== '0') {
       if (usuario) {
         if (usuario.ID_ORGANIZACAO.toString() !== omeStr) {
-          const nm_ome = unidadesJson.find((item) => item.UNI_ID === omeStr)
+          const nm_ome = unidadesJson.find(item => item.UNI_ID === omeStr)
           if (nm_ome) {
             Alert.alert(
               'Atenção',
@@ -517,7 +516,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
   const setPrevUf = (ufStr: string) => {
     setUfSelecionada(ufStr)
     const listaMunicipios = municipiosJson.filter(
-      (item) => item.ID_UF.toString() === ufStr,
+      item => item.ID_UF.toString() === ufStr,
     )
     setMunicipios(listaMunicipios)
   }
@@ -533,7 +532,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
   }
 
   const filterText = (value: string) => {
-    const nats = naturezasJson.filter((item) =>
+    const nats = naturezasJson.filter(item =>
       item.DES_DESCRICAO.includes(value.toUpperCase()),
     )
     setNaturezasFiltradas(nats)
@@ -554,7 +553,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
             formTranscricao.setValue('NATUREZA1', item.DES_DESCRICAO)
 
             const naturezaAdicionada = naturezasEscolhidas.find(
-              (n) => n.ID_NATUREZA === item.DES_NATUREZA_ID,
+              n => n.ID_NATUREZA === item.DES_NATUREZA_ID,
             )
             if (!naturezaAdicionada) {
               setNaturezasEscolhidas([
@@ -619,7 +618,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
             selectedValue={ome}
             onValueChange={(itemValue: any) => setPrevOME(itemValue.toString())}
           >
-            {unidadeOperacional.map((unidade) => {
+            {unidadeOperacional.map(unidade => {
               return (
                 <Picker.Item
                   key={unidade.UNI_ID}
@@ -672,8 +671,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
 
           <View>
             <Text style={{ color: '#aaa', marginBottom: 3 }}>
-              Naturezas do Fato
-{' '}
+              Naturezas do Fato{' '}
               <Text style={{ fontSize: 10, color: '#f00' }}>(Obrigatório)</Text>
             </Text>
             <View
@@ -699,7 +697,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
                     style={{ width: '90%' }}
                     onTouchStart={() => onTouchStart()}
                     editable={false}
-                    onChangeText={(text) => onChange(text)}
+                    onChangeText={text => onChange(text)}
                     value={value}
                     maxLength={25}
                   />
@@ -765,10 +763,10 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
                     borderBottomWidth: 1,
                     borderBottomColor: '#ededed',
                   }}
-                  onChangeText={(text) => filterText(text)}
+                  onChangeText={text => filterText(text)}
                 />
                 <ScrollView>
-                  {naturezasFiltradas.map((n) => {
+                  {naturezasFiltradas.map(n => {
                     return (
                       <TouchableOpacity
                         style={{
@@ -805,7 +803,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
               </View>
             </View>
           </Modal>
-          {naturezasEscolhidas.map((nat) => {
+          {naturezasEscolhidas.map(nat => {
             return (
               <View
                 style={{
@@ -935,7 +933,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
             rules={{ required: true }}
             defaultValue="1"
           >
-            {autoria.map((item) => {
+            {autoria.map(item => {
               return (
                 <Picker.Item
                   key={item.key}
@@ -955,7 +953,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
             rules={{ required: true }}
             defaultValue="1"
           >
-            {crime.map((item) => {
+            {crime.map(item => {
               return (
                 <Picker.Item
                   key={item.key}
@@ -975,7 +973,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
             rules={{ required: true }}
             defaultValue="2"
           >
-            {intensao.map((int) => {
+            {intensao.map(int => {
               return (
                 <Picker.Item
                   key={int.key}
@@ -995,7 +993,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
             rules={{ required: true }}
             defaultValue="0"
           >
-            {flagrante.map((item) => {
+            {flagrante.map(item => {
               return (
                 <Picker.Item
                   key={item.key}
@@ -1015,7 +1013,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
             rules={{ required: true }}
             defaultValue="114"
           >
-            {localOcorrenciaItems.map((localOcor) => {
+            {localOcorrenciaItems.map(localOcor => {
               return (
                 <Picker.Item
                   key={localOcor.ID_LOCAL_OCORRENCIA}
@@ -1094,7 +1092,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
             rules={{ required: true }}
             defaultValue="0"
           >
-            {municipios.map((item) => {
+            {municipios.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_MUNICIPIO}
@@ -1116,7 +1114,7 @@ OME: ${response.data.USUARIO.CD_OPERACIONAL}
             selectedValue={ufSelecionada}
             onValueChange={(itemValue: any) => setPrevUf(itemValue.toString())}
           >
-            {uf.map((item) => {
+            {uf.map(item => {
               return (
                 <Picker.Item
                   key={item.ID_UF}

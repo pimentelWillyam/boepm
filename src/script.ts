@@ -13,7 +13,7 @@ const rows = xlsx.utils.sheet_to_json(sheet)
 // Map para evitar duplicados (bairro + AIS)
 const bairrosMap = new Map()
 
-rows.forEach((row) => {
+rows.forEach(row => {
   const municipio = row['ID.MUNICIPIO']
   const area = row['ÁREA']
 

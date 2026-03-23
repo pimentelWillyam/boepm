@@ -195,11 +195,11 @@ const AdicionarEnvolvido: React.FC = () => {
 
       if (PermissionsAndroid.RESULTS.GRANTED === 'granted') {
         Geolocation.getCurrentPosition(
-          async (position) => {
+          async position => {
             setLat(String(position.coords.latitude))
             setLon(String(position.coords.longitude))
           },
-          (error) => {
+          error => {
             if (Config.ENVIRONMENT === Config.HML) {
               Alert.alert('Erro', JSON.stringify(error))
             }
@@ -362,7 +362,7 @@ const AdicionarEnvolvido: React.FC = () => {
     newData.EMAIL = data.EMAIL.toLowerCase()
 
     newData.USO_FORCA = []
-    usoForcaEscolhidos.forEach((item) => {
+    usoForcaEscolhidos.forEach(item => {
       newData.USO_FORCA.push({
         ID_TIPO_USO_FORCA: item.ID_TIPO_USO_FORCA as string,
         NM_TIPO_USO_FORCA: item.NM_TIPO_USO_FORCA as string,
@@ -412,28 +412,28 @@ const AdicionarEnvolvido: React.FC = () => {
     newData.DOCUMENTOS = documentos
 
     const tipoenv = tipoEnvolvimentoPessoaJson.find(
-      (item) => item.ID_TIPO_ENVOLVIMENTO_PESSOA === tipoEnvolvimento,
+      item => item.ID_TIPO_ENVOLVIMENTO_PESSOA === tipoEnvolvimento,
     )
     newData.NM_TIPO_ENVOLVIMENTO_PESSOA =
       tipoenv?.NM_TIPO_ENVOLVIMENTO_PESSOA as string
     const estadoCivil = estadoCivilJson.find(
-      (item) => item.ID_ESTADO_CIVIL === data.ID_ESTADO_CIVIL,
+      item => item.ID_ESTADO_CIVIL === data.ID_ESTADO_CIVIL,
     )
     newData.NM_ESTADO_CIVIL = estadoCivil?.NM_ESTADO_CIVIL as string
-    const ds_sexo = sexoJson.sexo.find((item) => item.ID === sexoSelecionado)
+    const ds_sexo = sexoJson.sexo.find(item => item.ID === sexoSelecionado)
     newData.DS_SEXO = ds_sexo?.SEXO_DESCRICAO
     const id_genero = sexoJson.identGenero.find(
-      (item) => item.IDENT_GEN_ID === identGeneroSelecionado,
+      item => item.IDENT_GEN_ID === identGeneroSelecionado,
     )
     newData.DS_GENERO = id_genero?.IDENT_GEN_DESCRICAO
     const id_orSex = sexoJson.orientSexual.find(
-      (item) =>
+      item =>
         item.ORIENT_SEXUAL_ID === formEnvolvido.getValues('ID_ORIENT_SEXUAL'),
     )
     newData.DS_ORIENT_SEXUAL = id_orSex?.ORIENT_SEXUAL_DESCRICAO
     // ***** TRATAMENTO DAS CARACTERISTICAS DO ENVOLVIDO *******
     const escola = escolaridadeJson.find(
-      (item) =>
+      item =>
         item.ID_ESCOLARIDADE === formEnvolvido.getValues('ID_ESCOLARIDADE'),
     )
     newData.NM_ESCOLARIDADE = escola?.NM_ESCOLARIDADE
@@ -530,11 +530,11 @@ const AdicionarEnvolvido: React.FC = () => {
       .ID_TIPO_USO_FORCA1 as string
     if (idUsoForca !== '0') {
       const usoForca = tipoUsoForcaJson.find(
-        (item) => item.ID_TIPO_USO_FORCA === idUsoForca,
+        item => item.ID_TIPO_USO_FORCA === idUsoForca,
       ) as IUsoForca
 
       const usoForcaEscolhida = usoForcaEscolhidos.find(
-        (item) => item.ID_TIPO_USO_FORCA === idUsoForca,
+        item => item.ID_TIPO_USO_FORCA === idUsoForca,
       )
 
       const novoUsoForcas = [
@@ -559,7 +559,7 @@ const AdicionarEnvolvido: React.FC = () => {
 
   const deletarTipoUsoForca = (idOpt: string) => {
     const novoUsoForcaSemODeletado = usoForcaEscolhidos.filter(
-      (item) => item.ID_TIPO_USO_FORCA !== idOpt,
+      item => item.ID_TIPO_USO_FORCA !== idOpt,
     )
     setUsoForcaEscolhidos(novoUsoForcaSemODeletado)
     if (envolvido) {
@@ -735,7 +735,7 @@ const AdicionarEnvolvido: React.FC = () => {
               error={errors.TIPO_PESSOA}
               rules={{ required: true }}
               selectedValue={tipoPessoa}
-              onValueChange={(v) => changeTipoPessoa(v)}
+              onValueChange={v => changeTipoPessoa(v)}
               defaultValue="F"
             >
               <Picker.Item key="F" label="FISICA" value="F" />
@@ -809,7 +809,7 @@ const AdicionarEnvolvido: React.FC = () => {
                   style={{ width: responsiveWidth(43) }}
                   defaultValue="PE"
                 >
-                  {ufJson.map((item) => {
+                  {ufJson.map(item => {
                     return (
                       <Picker.Item
                         key={item.SIGLA_UF}
@@ -841,9 +841,10 @@ const AdicionarEnvolvido: React.FC = () => {
               selectedValue={tipoEnvolvimento}
               defaultValue="3"
               onValueChange={(itemValue: any) =>
-                setTipoEnvPrev(itemValue.toString())}
+                setTipoEnvPrev(itemValue.toString())
+              }
             >
-              {envolvimento.map((item) => {
+              {envolvimento.map(item => {
                 return (
                   <Picker.Item
                     key={item.ID_TIPO_ENVOLVIMENTO_PESSOA}
@@ -894,7 +895,7 @@ const AdicionarEnvolvido: React.FC = () => {
                 defaultValue="0"
                 style={{ width: responsiveWidth(80) }}
               >
-                {tipoUsoForcaJson.map((item) => {
+                {tipoUsoForcaJson.map(item => {
                   return (
                     <Picker.Item
                       key={item.ID_TIPO_USO_FORCA}
@@ -912,7 +913,7 @@ const AdicionarEnvolvido: React.FC = () => {
               </TouchableOpacity>
             </View>
 
-            {usoForcaEscolhidos.map((usoF) => {
+            {usoForcaEscolhidos.map(usoF => {
               return (
                 <View
                   style={{
@@ -1023,9 +1024,10 @@ const AdicionarEnvolvido: React.FC = () => {
               selectedValue={sexoSelecionado}
               defaultValue="1"
               onValueChange={(itemValue: any) =>
-                setSexoSelecionado(itemValue.toString())}
+                setSexoSelecionado(itemValue.toString())
+              }
             >
-              {sexo.map((item) => {
+              {sexo.map(item => {
                 return (
                   <Picker.Item
                     key={item.ID}
@@ -1045,17 +1047,18 @@ const AdicionarEnvolvido: React.FC = () => {
               defaultValue="1"
               selectedValue={identGeneroSelecionado}
               onValueChange={(itemValue: any) =>
-                setIdentGeneroSelecionado(itemValue.toString())}
+                setIdentGeneroSelecionado(itemValue.toString())
+              }
             >
               {identGenero
                 .filter(
-                  (idt) =>
+                  idt =>
                     idt.CD_SEXO === '' ||
                     idt.CD_SEXO ===
-                      sexoJson.sexo.find((sx) => sx.ID === sexoSelecionado)
+                      sexoJson.sexo.find(sx => sx.ID === sexoSelecionado)
                         ?.CD_SEXO,
                 )
-                .map((item) => {
+                .map(item => {
                   return (
                     <Picker.Item
                       key={item.IDENT_GEN_ID}
@@ -1076,13 +1079,13 @@ const AdicionarEnvolvido: React.FC = () => {
             >
               {orientSexual
                 .filter(
-                  (idt) =>
+                  idt =>
                     idt.CD_SEXO === '' ||
                     idt.CD_SEXO ===
-                      sexoJson.sexo.find((sx) => sx.ID === sexoSelecionado)
+                      sexoJson.sexo.find(sx => sx.ID === sexoSelecionado)
                         ?.CD_SEXO,
                 )
-                .map((item) => {
+                .map(item => {
                   return (
                     <Picker.Item
                       key={item.ORIENT_SEXUAL_ID}
@@ -1172,7 +1175,7 @@ const AdicionarEnvolvido: React.FC = () => {
               rules={{ required: true }}
               defaultValue="0"
             >
-              {estadoCivilJson.map((item) => {
+              {estadoCivilJson.map(item => {
                 return (
                   <Picker.Item
                     key={item.ID_ESTADO_CIVIL}
@@ -1191,7 +1194,7 @@ const AdicionarEnvolvido: React.FC = () => {
               rules={{ required: true }}
               defaultValue="0"
             >
-              {escolaridadeJson.map((item) => {
+              {escolaridadeJson.map(item => {
                 return (
                   <Picker.Item
                     key={item.ID_ESCOLARIDADE}

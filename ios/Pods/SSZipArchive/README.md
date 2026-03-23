@@ -1,4 +1,3 @@
-
 [![Build Status](https://travis-ci.org/ZipArchive/ZipArchive.svg?branch=master)](https://travis-ci.org/ZipArchive/ZipArchive)
 
 # SSZipArchive
@@ -16,11 +15,12 @@ ZipArchive is a simple utility class for zipping and unzipping files on iOS, mac
 
 ## Installation and Setup
 
-*The main release branch is configured to support Objective-C and Swift 3+.*
+_The main release branch is configured to support Objective-C and Swift 3+._
 
 SSZipArchive works on Xcode 7-11 and above, iOS 9-13 and above, tvOS 9 and above, macOS 10.8-10.15 and above, watchOS 2 and above.
 
 ### CocoaPods
+
 In your Podfile:  
 `pod 'SSZipArchive'`
 
@@ -30,6 +30,7 @@ You should define your minimum deployment target explicitly, like:
 Recommended CocoaPods version should be at least CocoaPods 1.7.5.
 
 ### Carthage
+
 In your Cartfile:  
 `github "ZipArchive/ZipArchive"`
 
@@ -70,9 +71,9 @@ SSZipArchive is protected under the [MIT license](https://github.com/samsoffes/s
 
 ## Acknowledgments
 
-* Big thanks to *aish* for creating [ZipArchive](https://code.google.com/archive/p/ziparchive/). The project that inspired SSZipArchive.
-* Thank you [@soffes](https://github.com/soffes) for the actual name of SSZipArchive.
-* Thank you [@randomsequence](https://github.com/randomsequence) for implementing the creation support tech.
-* Thank you [@johnezang](https://github.com/johnezang) for all his amazing help along the way.
-* Thank you [@nmoinvaz](https://github.com/nmoinvaz) for minizip, the core of ZipArchive.
-* Thank you to [all the contributors](https://github.com/ZipArchive/ZipArchive/graphs/contributors).
+- Big thanks to _aish_ for creating [ZipArchive](https://code.google.com/archive/p/ziparchive/). The project that inspired SSZipArchive.
+- Thank you [@soffes](https://github.com/soffes) for the actual name of SSZipArchive.
+- Thank you [@randomsequence](https://github.com/randomsequence) for implementing the creation support tech.
+- Thank you [@johnezang](https://github.com/johnezang) for all his amazing help along the way.
+- Thank you [@nmoinvaz](https://github.com/nmoinvaz) for minizip, the core of ZipArchive.
+- Thank you to [all the contributors](https://github.com/ZipArchive/ZipArchive/graphs/contributors).

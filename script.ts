@@ -13,7 +13,7 @@ type Municipio = {
 
 const municipios: Municipio[] = require('./src/pages/Envolvidos/Endereco/municipiosCompletosFinal.json')
 
-const municipiosPernambuco = municipios.filter((m) => m.ID_UF === 1)
+const municipiosPernambuco = municipios.filter(m => m.ID_UF === 1)
 
 fs.writeFileSync(
   './src/pages/Envolvidos/Endereco/municipiosPernambuco.json',

@@ -127,31 +127,29 @@ export default function AdicionarObjeto() {
     }
 
     const tmp = tipoEnvolvimentoObjetoJson.find(
-      (item) => item.ID_TIPO_ENVOLVIMENTO_OBJETO === newData.ID_TIPO_ENV_OBJETO,
+      item => item.ID_TIPO_ENVOLVIMENTO_OBJETO === newData.ID_TIPO_ENV_OBJETO,
     )
     newData.NM_TIPO_ENV_OBJETO = tmp?.NM_TIPO_ENVOLVIMENTO_OBJETO || ''
 
     const tmpCor = corObjetoJson.find(
-      (item) => item.ID_COR_OBJETO === newData.ID_COR_OBJETO,
+      item => item.ID_COR_OBJETO === newData.ID_COR_OBJETO,
     )
     newData.NM_COR_OBJETO = tmpCor?.NM_COR_OBJETO || ''
 
     const tipoObjSelecionado = tipoObjetoJson.find(
-      (item) => item.ID_TIPO_OBJETO === tipoObj,
+      item => item.ID_TIPO_OBJETO === tipoObj,
     )
     newData.NM_TIPO_OBJETO = tipoObjSelecionado?.NM_TIPO_OBJETO || ''
 
     const categoriaSelect = categoriaJson.find(
-      (item) => item.ID_CATEGORIA === categoriaSelecionada,
+      item => item.ID_CATEGORIA === categoriaSelecionada,
     )
     newData.NM_CATEGORIA = categoriaSelect?.NM_CATEGORIA || ''
 
-    const tmpMarca = marcaJson.find(
-      (item) => item.ID_MARCA === marcaSelecionada,
-    )
+    const tmpMarca = marcaJson.find(item => item.ID_MARCA === marcaSelecionada)
     newData.NM_MARCA = tmpMarca?.NM_MARCA || ''
 
-    const tmpModelo = modeloJson.find((item) => item.ID === data.ID_MODELO)
+    const tmpModelo = modeloJson.find(item => item.ID === data.ID_MODELO)
     newData.NM_MODELO = tmpModelo?.NM_MODELO || ''
 
     if (newData.ID_MODELO === '0') {
@@ -159,13 +157,11 @@ export default function AdicionarObjeto() {
     }
 
     const tmpUni = unidadeMedidaJson.find(
-      (item) => item.ID_UNIDADE_MEDIDA === newData.ID_UNIDADE_MEDIDA,
+      item => item.ID_UNIDADE_MEDIDA === newData.ID_UNIDADE_MEDIDA,
     )
     newData.NM_UNIDADE_MEDIDA = tmpUni?.NM_UNIDADE_MEDIDA || ''
 
-    const tmpMoeda = moedaJson.find(
-      (item) => item.ID_MOEDA === newData.ID_MOEDA,
-    )
+    const tmpMoeda = moedaJson.find(item => item.ID_MOEDA === newData.ID_MOEDA)
     newData.NM_MOEDA = tmpMoeda?.NM_MOEDA || ''
 
     newData.ID_TIPO_OBJETO = tipoObj
@@ -194,7 +190,7 @@ export default function AdicionarObjeto() {
       }
 
       const tmpComb = combustivelJson.find(
-        (item) => item.ID_TIPO_COMBUSTIVEL === data.ID_TIPO_COMBUSTIVEL,
+        item => item.ID_TIPO_COMBUSTIVEL === data.ID_TIPO_COMBUSTIVEL,
       )
       veiculo.NM_TIPO_COMBUSTIVEL = tmpComb?.NM_TIPO_COMBUSTIVEL as string
       newData.ID_VEICULO = { ...veiculo }
@@ -231,22 +227,22 @@ export default function AdicionarObjeto() {
         QTD_MUNICAO: data.QTD_MUNICAO,
       }
       const dimArma = dimensaoArmaJson.find(
-        (item) => item.ID_DIMENSAO_ARMA === data.ID_DIMENSAO_ARMA,
+        item => item.ID_DIMENSAO_ARMA === data.ID_DIMENSAO_ARMA,
       )
       arma.NM_DIMENSAO_ARMA = dimArma?.NM_DIMENSAO_ARMA as string
 
       const tmp1 = acabamentoArmaJson.find(
-        (item) => item.ID_ACABAMENTO_ARMA === data.ID_ACABAMENTO_ARMA,
+        item => item.ID_ACABAMENTO_ARMA === data.ID_ACABAMENTO_ARMA,
       )
       arma.NM_ACABAMENTO_ARMA = tmp1?.NM_ACABAMENTO_ARMA as string
 
       const tmpSist = sistemaArmaJson.find(
-        (item) => item.ID_SISTEMA_ARMA === data.ID_SISTEMA_ARMA,
+        item => item.ID_SISTEMA_ARMA === data.ID_SISTEMA_ARMA,
       )
       arma.NM_SISTEMA_ARMA = tmpSist?.NM_SISTEMA_ARMA as string
 
       const tmpCoron = coronhaArmaJson.find(
-        (item) => item.ID_CORONHA_ARMA === data.ID_CORONHA_ARMA,
+        item => item.ID_CORONHA_ARMA === data.ID_CORONHA_ARMA,
       )
       arma.NM_CORONHA_ARMA = tmpCoron?.NM_CORONHA_ARMA as string
 
@@ -258,7 +254,7 @@ export default function AdicionarObjeto() {
     if (route.params) {
       if (objeto) {
         const index = objs.findIndex(
-          (item) => item.ID_OBJETO === objeto.ID_OBJETO,
+          item => item.ID_OBJETO === objeto.ID_OBJETO,
         )
         objs.splice(index, 1, newData)
       }
@@ -282,7 +278,7 @@ export default function AdicionarObjeto() {
 
   const setTipoObjPrev = (value: string) => {
     setTipoObj(value)
-    const tmp = categorias.filter((item) => item.ID_TIPO_OBJETO === value)
+    const tmp = categorias.filter(item => item.ID_TIPO_OBJETO === value)
     setCategoriaSelecionada(tmp[0].ID_CATEGORIA || '0')
     setMarcaSelecionada('')
     formObjeto.setValue('ID_MODELO', '')
@@ -312,7 +308,7 @@ export default function AdicionarObjeto() {
                 rules={{ required: true }}
                 defaultValue="1"
               >
-                {tipoEnvolvimentoObjetoJson.map((item) => {
+                {tipoEnvolvimentoObjetoJson.map(item => {
                   return (
                     <Picker.Item
                       key={item.ID_TIPO_ENVOLVIMENTO_OBJETO}
@@ -331,7 +327,7 @@ export default function AdicionarObjeto() {
                 rules={{ required: true }}
                 defaultValue="0"
               >
-                {corObjetoJson.map((item) => {
+                {corObjetoJson.map(item => {
                   return (
                     <Picker.Item
                       key={item.ID_COR_OBJETO}
@@ -350,10 +346,11 @@ export default function AdicionarObjeto() {
                 rules={{ required: true }}
                 selectedValue={tipoObj}
                 defaultValue="0"
-                onValueChange={(itemIdTipoObj) =>
-                  setTipoObjPrev(itemIdTipoObj.toString() || '')}
+                onValueChange={itemIdTipoObj =>
+                  setTipoObjPrev(itemIdTipoObj.toString() || '')
+                }
               >
-                {tipoObjetoJson.map((item) => {
+                {tipoObjetoJson.map(item => {
                   return (
                     <Picker.Item
                       key={item.ID_TIPO_OBJETO}
@@ -371,12 +368,13 @@ export default function AdicionarObjeto() {
                 error={errors.ID_CATEGORIA}
                 rules={{ required: true }}
                 selectedValue={categoriaSelecionada}
-                onValueChange={(itemIdTipoCat) =>
-                  setCategoriaSelecionada(itemIdTipoCat.toString() || '')}
+                onValueChange={itemIdTipoCat =>
+                  setCategoriaSelecionada(itemIdTipoCat.toString() || '')
+                }
               >
                 {categoriaJson
-                  .filter((item) => item.ID_TIPO_OBJETO === tipoObj)
-                  .map((item) => {
+                  .filter(item => item.ID_TIPO_OBJETO === tipoObj)
+                  .map(item => {
                     return (
                       <Picker.Item
                         key={item.ID_CATEGORIA}
@@ -394,12 +392,13 @@ export default function AdicionarObjeto() {
                 error={errors.ID_MARCA}
                 rules={{ required: false }}
                 selectedValue={marcaSelecionada}
-                onValueChange={(itemIdMarca) =>
-                  setMarcaSelecionada(itemIdMarca ? itemIdMarca.toString() : '')}
+                onValueChange={itemIdMarca =>
+                  setMarcaSelecionada(itemIdMarca ? itemIdMarca.toString() : '')
+                }
               >
                 {marcaJson
-                  .filter((item) => item.ID_CATEGORIA === categoriaSelecionada)
-                  .map((item) => {
+                  .filter(item => item.ID_CATEGORIA === categoriaSelecionada)
+                  .map(item => {
                     return (
                       <Picker.Item
                         key={item.ID_MARCA}
@@ -419,11 +418,11 @@ export default function AdicionarObjeto() {
               >
                 {modeloJson
                   .filter(
-                    (item) =>
+                    item =>
                       item.ID_MARCA === marcaSelecionada &&
                       item.ID_CATEGORIA === categoriaSelecionada,
                   )
-                  .map((item) => {
+                  .map(item => {
                     return (
                       <Picker.Item
                         key={item.ID}
@@ -501,7 +500,7 @@ export default function AdicionarObjeto() {
                     rules={{ required: false }}
                     defaultValue="2"
                   >
-                    {dimensaoArmaJson.map((item) => {
+                    {dimensaoArmaJson.map(item => {
                       return (
                         <Picker.Item
                           key={item.ID_DIMENSAO_ARMA}
@@ -520,7 +519,7 @@ export default function AdicionarObjeto() {
                     rules={{ required: false }}
                     defaultValue="0"
                   >
-                    {acabamentoArmaJson.map((item) => {
+                    {acabamentoArmaJson.map(item => {
                       return (
                         <Picker.Item
                           key={item.ID_ACABAMENTO_ARMA}
@@ -539,7 +538,7 @@ export default function AdicionarObjeto() {
                     rules={{ required: false }}
                     defaultValue="0"
                   >
-                    {sistemaArmaJson.map((item) => {
+                    {sistemaArmaJson.map(item => {
                       return (
                         <Picker.Item
                           key={item.ID_SISTEMA_ARMA}
@@ -558,7 +557,7 @@ export default function AdicionarObjeto() {
                     rules={{ required: false }}
                     defaultValue="0"
                   >
-                    {coronhaArmaJson.map((item) => {
+                    {coronhaArmaJson.map(item => {
                       return (
                         <Picker.Item
                           key={item.ID_CORONHA_ARMA}
@@ -675,7 +674,7 @@ export default function AdicionarObjeto() {
                     rules={{ required: true }}
                     defaultValue="0"
                   >
-                    {combustivelJson.map((item) => {
+                    {combustivelJson.map(item => {
                       return (
                         <Picker.Item
                           key={item.ID_TIPO_COMBUSTIVEL}
@@ -719,7 +718,7 @@ export default function AdicionarObjeto() {
                 rules={{ required: true }}
                 defaultValue="129"
               >
-                {moedaJson.map((item) => {
+                {moedaJson.map(item => {
                   return (
                     <Picker.Item
                       key={item.ID_MOEDA}
@@ -757,7 +756,7 @@ export default function AdicionarObjeto() {
                 rules={{ required: true }}
                 defaultValue="10"
               >
-                {unidadeMedidaJson.map((item) => {
+                {unidadeMedidaJson.map(item => {
                   return (
                     <Picker.Item
                       key={item.ID_UNIDADE_MEDIDA}

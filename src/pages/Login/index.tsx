@@ -105,11 +105,11 @@ const Login = () => {
 
       if (PermissionsAndroid.RESULTS.GRANTED === 'granted') {
         Geolocation.getCurrentPosition(
-          async (position) => {
+          async position => {
             setLat(String(position.coords.latitude))
             setLon(String(position.coords.longitude))
           },
-          (error) => {
+          error => {
             if (Config.ENVIRONMENT === Config.HML) {
               Alert.alert('Erro', JSON.stringify(error))
             }
@@ -339,7 +339,7 @@ const Login = () => {
             render={({ onChange, onBlur, value }) => (
               <InputLogin
                 onBlur={onBlur}
-                onChangeText={(text) => onChange(text)}
+                onChangeText={text => onChange(text)}
                 value={value}
                 icon="user"
                 error={errors.user}
@@ -357,7 +357,7 @@ const Login = () => {
             render={({ onChange, onBlur, value }) => (
               <InputLogin
                 onBlur={onBlur}
-                onChangeText={(text) => onChange(text)}
+                onChangeText={text => onChange(text)}
                 value={value}
                 icon="lock"
                 error={errors.senha}
